@@ -35,7 +35,7 @@
     content: '';
 }
 .sub_title_wrap h2.en {
-    font-size: 5.6rem;
+    font-size: 56px;
     font-weight: 700 !important;
     color: #111;
     text-align: center;
@@ -61,6 +61,9 @@
 .mt30 {
     margin-top: 30px;
 }
+.mb30 {
+    margin-bottom: 30px;
+}
 .mt80 {
     margin-top: 80px;
 }
@@ -79,6 +82,9 @@
 }
 .intro_list {
     border-top: 1px solid #111;
+}
+.init.m > * {
+    vertical-align: middle;
 }
 .mt40 {
     margin-top: 40px;
@@ -115,10 +121,197 @@
     padding: 30px 20px;
     transition: all 0.3s ease-in-out;
 }
+.rowfull {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
 .intro_list a .logo {
     display: inline-block;
     width: 25%;
     text-align: left;
 }
+.intro_list a:hover {
+    background: #f6f6f6;
+}
+.intro_list a .logo img {
+    max-width: 248px;
+}
+.intro_list a .logo .width_180{
+    width: 180px !important;
+}
+.intro_list a .logo .width_166{
+    width: 166px !important;
+}
+.intro_list a .logo .width_116{
+    width: 116px !important;
+}
+.intro_list a .logo em {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+}
+.intro_list a em {
+    font-weight: bold;
+}
+.intro_list a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -22px;
+    width: 120px;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #aaa;
+    background: #fff;
+    border-radius: 44px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+    text-align: center;
+}
+.intro_list a p {
+    display: inline-block;
+    padding-left: 30px;
+    width: calc(75% - 150px);
+}
+.intro_box {
+    margin: 60px 0;
+    text-align: center;
+}
+.intro_box .box {
+    display: inline-block;
+    width: calc(40% - 25px);
+    padding: 60px 0;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.intro_box .box p {
+    position: relative;
+    display: inline-block;
+    padding: 0 60px;
+}
+.intro_box .box p::before {
+    left: 0;
+    background: url(/assets/imgs/sub/introduction/intro_box_left.png) no-repeat center center;
+}
+.intro_box .box p::before, .intro_box .box p::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -12px;
+    width: 36px;
+    height: 77px;
+}
+.intro_box .box p::after {
+    right: 0;
+    background: url(/assets/imgs/sub/introduction/intro_box_right.png) no-repeat center center;
+}
+.intro_box .box span {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #888;
+}
 /* introduction end */
 
+/* view start */
+.row_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ov-img {
+    width: calc(40% - 1rem);
+    display: inline-block;
+    margin-right: 2rem;
+}
+.ov-text {
+    width: calc(60% - 1rem);
+    margin-right: 0;
+}
+.table04 {
+    border-top: 2px solid #111;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.table04 dl {
+    padding: 10px;
+    font-size: 17px;
+    border-bottom: 1px solid #ddd;
+    color: #111;
+}
+.table04 dl dt {
+    display: inline-block;
+    width: calc(25% - 20px);
+    font-weight: 700;
+    vertical-align: top;
+}
+.table04 dl dd {
+    display: inline-block;
+    width: 75%;
+    line-height: 1.6;
+}
+.table02_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.width_100{
+    width: 100%;
+}
+.table02 {
+    width: 100%;
+    border-top: 2px solid #111;
+}
+.table02 dl {
+    padding: 30px 0;
+    font-size: 17px;
+    border-bottom: 1px solid #ddd;
+    color: #111;
+}
+.table02 dl dt {
+    display: inline-block;
+    width: calc(25% - 20px);
+    font-weight: 700;
+    text-align: center;
+    vertical-align: top;
+}
+.table02 dl dd {
+    display: inline-block;
+    width: 75%;
+    line-height: 1.6;
+}
+/* view end */
+
+/* program section start */
+.txt-center {
+    text-align: center;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pgsection .sec_pg:nth-child(1) {
+    border: none;
+}
+.pgsection .sec_pg:first-child {
+    padding-top: 0;
+}
+.pgsection .sec_pg {
+    padding: 40px;
+    border-top: solid 1px #ddd;
+    font-size: 17px;
+    color: #333;
+}
+.pgsection .sec_pg .tit-sec-name {
+    display: inline-block;
+    font-size: 32px;
+    color: #111;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+/* program section end */

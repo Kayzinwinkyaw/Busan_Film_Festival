@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div id="snb" class="snb">
+      <div class="container-xxl">
+        <ul class="list-inline snb_ul" id="snbul1">
+          <li class="current">
+            <a href="/eng/addon/10000001/page.asp?page_num=7709" target="_top"
+              >Introduction</a
+            >
+          </li>
+          <li class="on_">
+            <a href="/eng/addon/10000001/page.asp?page_num=7971" target="_top"
+              >Overview</a
+            >
+          </li>
+          <li class="on_">
+            <a href="/eng/addon/10000001/page.asp?page_num=7710" target="_top"
+              >Program Sections</a
+            >
+          </li>
+          <li class="on_">
+            <a href="/eng/addon/10000001/page.asp?page_num=7711" target="_top"
+              >Awards</a
+            >
+          </li>
+          <li class="on_">
+            <a href="/eng/addon/10000001/page.asp?page_num=7712" target="_top"
+              >Programmers</a
+            >
+          </li>
+          <li class="on_">
+            <a href="/eng/addon/10000001/page.asp?page_num=7713" target="_top"
+              >The Team</a
+            >
+          </li>
+          <li class="on_">
+            <a href="/eng/addon/10000001/page.asp?page_num=7972" target="_top"
+              >Sponsorship</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">Overview</h2>
+          </div>
+        </div>
+      </div>
+      <div class="page page1-2">
+        <!--//START: CONTENTS AREA-->
+
+        <div class="container-sm">
+          <div class="row_container">
+            <div class="row width_100">
+                <div class="ov-img">
+                  <img src="/assets/imgs/sub/view/img_overview.jpg" />
+                </div>
+                <div class="ov-text">
+                  <h4 class="tit-sec">
+                    Busan International Film Festival,<br />
+                    the largest film festival in Asia,<br />
+                    will be held from 2 October, 2024!
+                  </h4>
+    
+                  <div class="table04 mt20">
+                    <dl>
+                      <dt>Title</dt>
+                      <dd class="bold">29th Busan International Film Festival</dd>
+                    </dl>
+                    <dl>
+                      <dt>Type</dt>
+                      <dd>Non-competitive (with some competitive sections)</dd>
+                    </dl>
+                    <dl>
+                      <dt>Date</dt>
+                      <dd>2nd (Wed) - 11th (Fri) October, 2024 (10days)</dd>
+                    </dl>
+                    <dl>
+                      <dt>Venues</dt>
+                      <dd>Busan Cinema Center and other selected theaters</dd>
+                    </dl>
+                    <dl>
+                      <dt>Supported by</dt>
+                      <dd>
+                        Ministry of Culture, Sports and Tourism<br />
+                        Metropolitan City of Busan<br />
+                        Korean Film Council
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            <div class="table02_container">
+                <h4 class="tit-sec mt30 width_100">
+                    28th Busan International Film Festival Overview
+                  </h4>
+                  <div class="table02">
+                    <dl>
+                      <dt>Dates</dt>
+                      <dd>Oct 4th (Wed) - Oct 13rd (Fri), 2023</dd>
+                    </dl>
+                    <dl>
+                      <dt>Venues</dt>
+                      <dd>Busan Cinema Center and other selected theaters</dd>
+                    </dl>
+                    <dl>
+                      <dt>Screening Venues</dt>
+                      <dd>
+                        25 Screens in 4 Theaters<br />
+                        - Busan Cinema Center<br />
+                        - CGV Centum City<br />
+                        - LOTTE CINEMA Centum City<br />
+                        - LOTTE CINEMA Daeyoung (Community BIFF)
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>Selections</dt>
+                      <dd>
+                        269 films in total<br />
+                        Official Selection: 209 films from 70 countries<br />
+                        - World + International Premiere: 88 films<br />
+                        - World Premiere: 80 films<br />
+                        - International Premiere: 8 films<br />
+                        Community BIFF: 60 films<br />
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>Total Attendance</dt>
+                      <dd>
+                        - Film Festival: 142,432 (Occupied Seats: approximately
+                        82%)<br />
+                        - Community BIFF: 11,092 (Occupied Seats: 79.4%)<br />
+                        - BIFF Everywhere: 8,228
+                      </dd>
+                    </dl>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <!-- // container -->
+      </div>
+    </div>
+    ${require('./include/_footer.html')}
+  </body>
+</html>
