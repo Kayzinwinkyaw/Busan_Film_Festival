@@ -3,20 +3,27 @@
     File definition: Common css
     Order:    Header > table > list > input > select box, radiobutton, checkbox > Footer 
 -------------------------------------------------------------------*/
-
+html,body{
+  overflow-x: hidden;
+}
 .container {
   max-width: 1440px;
   margin: 0 auto;
   width: 95%;
   height: 100%;
 }
-.container-xl,.container-xxl {
+.container-xl, .container-xxl {
   width: 100%;
   padding-right: 2rem;
   padding-left: 2rem;
   margin-right: auto;
   margin-left: auto;
 }
+/* .container-xxl{
+  width: 1760px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+} */
 #hd {
   position: absolute;
   margin: 0 auto;
@@ -25,13 +32,13 @@
   background: #151515;
   z-index: 1000;
 }
-#hd.fixed-top {
+/* #hd.fixed-top {
   position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
   animation: header_fix .3s ease-in-out forwards;
-}
+} */
 #hd:before,
 #hd:after {
   clear: both;
@@ -119,6 +126,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 25px 0;
+  position: sticky;
+  top: 87px;
 }
 #hd .logo {
   display: inline-block;
@@ -166,7 +175,7 @@
 #hd .gnb nav > .depth1 > li > a {
   position: relative;
   display: inline-block;
-  font-size: 1.9rem;
+  font-size: 25px;
   white-space: nowrap;
   font-weight: bold;
   color: var(--bs-white);
@@ -248,7 +257,7 @@
     background: #222;
 }
 .footer-top {
-  padding: 8rem 0 6.5rem 0 !important;
+  padding: 80px 0 65px 0 !important;
 }
 .footer_btm{
   display: flex;
@@ -290,7 +299,7 @@
   display: flex;
   justify-content: flex-end;
   font-size: 20px;
-  padding: 50px 0;
+  padding: 0 0 50px 0;
   color: #777;
 }
 /* footer end */

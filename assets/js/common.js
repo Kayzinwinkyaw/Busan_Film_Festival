@@ -41,24 +41,23 @@ $(document).ready(function () {
             type: 'fraction',
         },
         navigation: {
-            nextEl: '#slider-next4',
-            prevEl: '#slider-prev4',
+            nextEl: '#slider-next3',
+            prevEl: '#slider-prev3',
         },
     });
 
     const poster_swiper = new Swiper('.poster-swiper', {
-        slidesPerView: 4,
+        slidesPerView: 7,
         initialSlide: 0,
         loop: true,
-        autoplay: true,
         spaceBetween: 30,
         pagination: {
             el: '.swiper-pagination',
             type: 'fraction',
         },
         navigation: {
-            nextEl: '#slider-next4',
-            prevEl: '#slider-prev4',
+            nextEl: '#slider-next2',
+            prevEl: '#slider-prev2',
         },
     });
 }
