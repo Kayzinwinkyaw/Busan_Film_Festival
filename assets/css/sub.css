@@ -43,9 +43,82 @@
 }
 .container-sm, .container-md {
     margin-bottom: 120px;
-    max-width: 1192px;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+}
+.container-sm img{
+    width: 100%;
+}
+.tit-sec {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #111;
+}
+.desc {
+    font-size: 17px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+.mt80 {
+    margin-top: 80px;
+}
+.mb60 {
+    margin-bottom: 60px;
+}
+.mt60 {
+    margin-top: 60px;
+}
+.txt-center {
+    text-align: center !important;
+}
+.txt-center img{
+    max-width: 100% !important;
+    width: 35% !important;
+}
+.intro_list {
+    border-top: 1px solid #111;
+}
+.mt40 {
+    margin-top: 40px;
+}
+.intro_list dl {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+.intro_list dl dt {
+    position: relative;
+    padding-top: 180px;
+    font-weight: 700;
+    color: #333;
+}
+.intro_list dl dt::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: 40px;
+    left: 50%;
+    margin-left: -58px;
+    width: 116px;
+    height: 116px;
+    background: url(/assets/imgs/sub/introduction/intro_logo_biff.png) no-repeat;
+}
+.intro_list dl dd {
+    color: #111;
+}
+.intro_list a {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding: 30px 20px;
+    transition: all 0.3s ease-in-out;
+}
+.intro_list a .logo {
+    display: inline-block;
+    width: 25%;
+    text-align: left;
 }
 /* introduction end */
 
