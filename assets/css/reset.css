@@ -56,7 +56,9 @@ html, body {
 	color:var(--bs-black);
 	background-color: var(--bs-white);
 }
-
+b,strong{
+	font-weight: bolder;
+}
 input[type=text], input[type=password], textarea{ 
 	-webkit-transition:all 0.30s ease-in-out;
 	-moz-transition:all 0.30s ease-in-out;

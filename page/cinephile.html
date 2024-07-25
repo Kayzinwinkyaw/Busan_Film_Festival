@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div id="snb" class="snb">
+      <div class="container-xxl">
+        <ul class="list-inline snb_ul" id="snbul1">
+          <li class="">
+            <a href="/dist/accreditation.html" target="_top">Accreditation</a>
+          </li>
+          <li class="">
+            <a href="/dist/festival.html" target="_top">Festival</a>
+          </li>
+          <li class="current">
+            <a href="/dist/cinephile.html" target="_top">Cinephile</a>
+          </li>
+          <li class="">
+            <a href="/dist/press.html" target="_top">Press</a>
+          </li>
+          <li class="">
+            <a href="/dist/market.html" target="_top">Market</a>
+          </li>
+          <li class="">
+            <a href="/dist/accreditation_faq.html" target="_top">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">Cinephile</h2>
+          </div>
+        </div>
+      </div>
+      <div class="page cinephile">
+        <div class="container-sm">
+          <div class="box_basic">
+            Cinephile badge is for students studying film or video major at
+            domestic or foreign universities including graduate schools.
+            Students who are enrolled (including leave of absence) in
+            departments with courses such as directing, acting, cinematography
+            or script writing may apply.<br />
+            <strong>Those who have already graduated are not eligible.</strong>
+          </div>
+          <h4 class="txt-sub">How to Apply</h4>
+
+          <div class="box_basic">
+            <strong
+              >Submit the registration(
+              <span class="red">including supporting documents</span> )within
+              the due date&nbsp;&nbsp;→&nbsp;&nbsp;Pay the registration fee
+              after approval &nbsp;&nbsp;→&nbsp;&nbsp; Registration completed
+            </strong>
+          </div>
+
+          <ul class="list_basic">
+            <li>
+              You MUST submit the following documents to prove that you are
+              eligible for Cinephile Badge:
+            </li>
+            <li>
+              Proof of identity as a student currently majoring in film related
+              studies at university or institution. <br />
+              (i.e. Student status letter or proof of enrollment issued within a
+              month)
+            </li>
+
+            <li>
+              For group registration (20 participants or more), please contact
+              <a href="mailto:guest@biff.kr">guest@biff.kr</a> in advance. A
+              complimentary badge will be provided for 1 student and/or 1
+              lecturer leading the group.
+            </li>
+            <li>
+              A credit/debit card issued in Korea is not available for payment
+              for registration on this page.
+            </li>
+          </ul>
+
+          <ul class="list_info mt40">
+            <li class="flex_2">
+              <strong
+                >General <br /><em
+                  >(On-site registration unavailable)</em
+                ></strong
+              >
+              <sub>August 1 (Thu) - 15:00(KST) September 6 (Fri)</sub>
+              <span>40 USD</span>
+            </li>
+          </ul>
+          <p class="desc-list">
+            <span class="red"
+              ><b
+                >※ Please make sure to check the registration deadlines.</b
+              ></span
+            >
+          </p>
+
+          <h4 class="txt-sub mt40">Cinephile Badge Benefits</h4>
+
+          <ul class="list_basic">
+            <li>Up to 4 complimentary tickets for different screenings a day</li>
+            <li>Participation available in Master Class (Unavailable in case tickets are sold out)</li>
+            <li>Access to the Asian Contents &amp; Film Market</li>
+        </ul>
+          <p class="desc-list mt10" style="margin-left: 3px">
+            <b
+              >* Cinephile Badge does NOT grant access to Opening/Closing
+              ceremonies.</b
+            >
+          </p>
+
+          <h4 class="txt-sub mt40">Inquiry</h4>
+          <div class="box_basic">
+            <p class="desc">
+              E-mail: <a href="mailto:guest@biff.kr">guest@biff.kr</a>
+            </p>
+          </div>
+          <div class="txt-center">
+            <a
+              class="btn_badge"
+              href="javascript:alert('The badge application period is currently closed.');"
+              >Cinephile Badge Registration</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    ${require('./include/_footer.html')}
+  </body>
+</html>

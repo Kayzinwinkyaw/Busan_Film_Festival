@@ -32,13 +32,13 @@ html,body{
   background: #151515;
   z-index: 1000;
 }
-/* #hd.fixed-top {
+#hd.fixed-top {
   position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
   animation: header_fix .3s ease-in-out forwards;
-} */
+}
 #hd:before,
 #hd:after {
   clear: both;
@@ -207,6 +207,7 @@ html,body{
   padding: 0;
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 .gnb nav .depth2 > li > a {
   font-size: 17px;
@@ -226,7 +227,7 @@ html,body{
 .depth2 {
   display: none;
   position: absolute;
-  top: 54px;
+  top: 57px;
   padding: 0;
   margin: 0 auto;
   left: 50%;
@@ -251,16 +252,14 @@ html,body{
   display: block;
 }
 .gnb nav .depth2 > li > .arrow {
-  display: none; /* Use display: none to hide initially */
-  width: 32px;
-  height: 32px;
+  display: none; 
 }
 .gnb nav .depth2 > li:hover > .arrow {
-  display: inline-block; /* Display the arrow when hovered */
+  display: inline-block; 
 }
 .gnb nav .depth2 > li > .arrow i {
-  font-size: 18px;
-  color: var(--bs-white) !important; /* Adjust color as needed */
+  font-size: 16px;
+  color: var(--bs-white) !important; 
 }
 /* footer start */
 .footer{

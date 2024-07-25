@@ -82,6 +82,10 @@
   justify-content: space-between;
   gap: 50px;
 }
+.row {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 0;
+}
 .main_news {
   width: 49.33333%;
 }

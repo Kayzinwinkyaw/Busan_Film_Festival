@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div id="snb" class="snb">
+      <div class="container-xxl">
+        <ul class="list-inline snb_ul" id="snbul1">
+          <li class="">
+            <a href="/dist/submission_guide.html" target="_top"
+              >Submission Guide</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/official_selection.html" target="_top"
+              >Official Selection</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/film_academy.html" target="_top"
+              >CHANEL X BIFF Asian Film Academy</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/project_market.html" target="_top"
+              >Asian Project Market</a
+            >
+          </li>
+          <li class="current">
+            <a href="/dist/cinema_fund.html" target="_top">Asian Cinema Fund</a>
+          </li>
+          <li class="">
+            <a href="/dist/platform_busan.html" target="_top">Platform BUSAN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">Asian Cinema Fund</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container-m">
+        <div class="container-xl">
+          <div class="d3tab_basic">
+            <ul id="depth3" class="depth3_ul">
+              <li class="depth3_li on 1_0">
+                <a href="/dist/cinema_fund.html" target="_top">ACF</a>
+              </li>
+              <li class="depth3_li on_1_1">
+                <a href="https://acf.biff.kr/eng/addon/10000001/page.asp?page_num=7352" target="_top"
+                  >Application</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page cinema_fund">
+        <div class="container-sm">
+          <div class="">
+            <h4 class="tit-sec mt50">
+              Partner of Asian Cinema from Start to Finish!
+            </h4>
+            <p class="desc">
+              Asian Cinema Fund (ACF) is a funding initiative to support Asian
+              independent filmmakers in making feature-length fiction films and
+              documentaries. By supporting Asian film projects in their script
+              development, production, and post-production stages, ACF strives
+              to activate independent film productions in Asia and to provide a
+              stable production environment for talented Asian independent
+              filmmakers.
+            </p>
+            <div class="table02 mt50">
+              <dl>
+                <dt>Script Development Fund</dt>
+                <dd>
+                  Cash grant of 10 million KRW for script development of an
+                  Asian director’s first or second feature-length fiction film
+                  projects.
+                </dd>
+              </dl>
+              <dl>
+                <dt>Post-Production Fund</dt>
+                <dd>
+                  In-kind post-production services (DI, sound mixing, English
+                  subtitle spotting, and DCP) for Asian and Korean
+                  feature-length fiction film projects.
+                </dd>
+              </dl>
+              <dl>
+                <dt>Asian Network of Documentary(AND) Fund</dt>
+                <dd>
+                  Cash grant of up to 20 million KRW for Asian and Korean
+                  feature-length documentary film projects in all stages of
+                  production.
+                </dd>
+              </dl>
+              <dl>
+                <dt>Contact</dt>
+                <dd>
+                  <strong>Website : </strong
+                  ><a
+                    class="underline"
+                    href="https://acf.biff.kr/eng/"
+                    target="_blank"
+                    >acf.biff.kr</a
+                  ><br />
+                  <strong>E-mail : </strong
+                  ><a class="underline" href="mailto:acf@biff.kr"
+                    >acf@biff.kr</a
+                  >
+                </dd>
+              </dl>
+            </div>
+
+            <div class="txt-center">
+              <a
+                class="btn_badge"
+                href="https://acf.biff.kr/eng/"
+                target="_blank"
+                >Direct link to homepage</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    ${require('./include/_footer.html')}
+  </body>
+</html>

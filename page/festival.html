@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div id="snb" class="snb">
+      <div class="container-xxl">
+        <ul class="list-inline snb_ul" id="snbul1">
+          <li class="">
+            <a href="/dist/accreditation.html" target="_top">Accreditation</a>
+          </li>
+          <li class="current">
+            <a href="/dist/festival.html" target="_top">Festival</a>
+          </li>
+          <li class="">
+            <a href="/dist/cinephile.html" target="_top">Cinephile</a>
+          </li>
+          <li class="">
+            <a href="/dist/press.html" target="_top">Press</a>
+          </li>
+          <li class="">
+            <a href="/dist/market.html" target="_top">Market</a>
+          </li>
+          <li class="">
+            <a href="/dist/accreditation_faq.html" target="_top">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">Festival</h2>
+          </div>
+        </div>
+      </div>
+      <div class="page festival">
+        <div class="container-sm">
+          <div class="box_basic">
+            Festival Badge is for Filmmakers, professionals in the film industry
+            or members of film institutions, associations or festivals.
+          </div>
+          <h4 class="txt-sub">How to Apply</h4>
+
+          <div class="box_basic">
+            <strong
+              >Submit the registration(
+              <span class="red">including supporting documents</span> )within
+              the due date&nbsp;&nbsp;→&nbsp;&nbsp;Pay the registration fee
+              after approval &nbsp;&nbsp;→&nbsp;&nbsp; Registration completed
+            </strong>
+          </div>
+
+          <ul class="list_basic">
+            <li>
+              <b
+                >You MUST submit one of the following documents to prove that
+                you are eligible for Festival Badge.</b
+              >
+
+              <ul class="list_add">
+                <li>
+                  1. Proof of employment letter at a film company or film
+                  organization issued within 3 months. (Business card is not
+                  accepted)
+                  <br />* In case of a new company or organization, the company
+                  profile and list of recent film-related projects are also
+                  required.
+                </li>
+                <li>
+                  2. Filmography and proof of your participation in the film
+                  <br />- IMDB link including personal identification
+                  information (date of birth)<br />- Captured images of the
+                  ending credit with information of the film and your
+                  participation.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b
+                >Your application won’t be approved without up-to-date
+                supporting documents regardless of past accreditation. Personal
+                information is to be discarded after each edition following the
+                festival policy.</b
+              >
+            </li>
+            <li><b>Additional documents may be requested if necessary.</b></li>
+            <li>
+              <b
+                >A credit/debit card issued in Korea is not available for
+                payment for registration on this page.</b
+              >
+            </li>
+          </ul>
+
+          <ul class="list_info mt40">
+            <li>
+              <strong>Early Bird</strong>
+              <sub>August 1 (Thu) - 15:00(KST) August 30 (Fri)</sub>
+              <span>70 USD</span>
+            </li>
+            <li>
+              <strong>General</strong>
+              <sub>September 2 (Mon) - 15:00(KST) September 13 (Fri)</sub>
+              <span>90 USD</span>
+            </li>
+            <li>
+              <strong>On-site</strong>
+              <sub>October 1 (Tue) - October 11 (Fri)</sub>
+              <span>KRW 120,000</span>
+            </li>
+          </ul>
+          <p class="desc-list">
+            <span class="red"
+              ><b
+                >※ Please make sure to check the registration deadlines.</b
+              ></span
+            >
+          </p>
+
+          <h4 class="txt-sub mt40">Festival Badge Benefits</h4>
+
+          <ul class="list_basic">
+            <li>
+              Up to 4 complimentary tickets for different screenings a day
+            </li>
+            <li>Access to Guest exclusive ticket desk</li>
+            <li>Access to Guest exclusive online ticketing service</li>
+            <li>Access to Press &amp; Industry Screenings</li>
+            <li>Access to Asian Contents &amp; Film Market</li>
+            <li>Complimentary Guest Package</li>
+          </ul>
+          <p class="desc-list mt10" style="margin-left: 3px">
+            <b
+              >* Festival Badge does NOT grant access to Opening/Closing
+              ceremonies.</b
+            >
+          </p>
+
+          <h4 class="txt-sub mt40">Inquiry</h4>
+          <div class="box_basic">
+            <p class="desc">
+              E-mail: <a href="mailto:guest@biff.kr">guest@biff.kr</a>
+            </p>
+          </div>
+          <div class="txt-center">
+            <a
+              class="btn_badge"
+              href="javascript:alert('The badge application period is currently closed.');"
+              >Festival Badge Registration</a
+            >
+          </div>
+        </div>
+        <!-- //container --><!--//END: CONTENTS AREA-->
+      </div>
+    </div>
+    ${require('./include/_footer.html')}
+  </body>
+</html>
