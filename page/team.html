@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div id="snb" class="snb">
+      <div class="container-xxl">
+        <ul class="list-inline snb_ul" id="snbul1">
+          <li class="">
+            <a href="/dist/introduction.html" target="_top"
+              >Introduction</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/view.html" target="_top"
+              >Overview</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/program_section.html" target="_top"
+              >Program Sections</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/awards.html" target="_top"
+              >Awards</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/programmers.html" target="_top"
+              >Programmers</a
+            >
+          </li>
+          <li class="current">
+            <a href="/dist/team.html" target="_top"
+              >The Team</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/sponsorship.html" target="_top"
+              >Sponsorship</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">The Team</h2>
+          </div>
+        </div>
+      </div>
+      <div class="page team">
+        <div class="container-xl container-sm">
+          <div class="contact mt20">
+            <div class="row contact_cont">
+              <div class="col-md-4 col-xs-6">
+                <div class="contact_li">
+                  <strong class="tit-sec">Management Support</strong>
+
+                  <div class="mt20">
+                    <div class="team">
+                      <span class="name">Planning &amp; Budget Team</span>
+                      <a class="link_mail" href="mailto:plan@biff.kr"
+                        >plan@biff.kr</a
+                      >
+                      <a class="link_mail" href="mailto:fund@biff.kr"
+                        >fund@biff.kr</a
+                      >
+                    </div>
+
+                    <div class="team">
+                      <span class="name">Human Resources &amp; General</span>
+                      <a class="link_mail" href="mailto:hr@biff.kr"
+                        >hr@biff.kr</a
+                      >
+                      <a class="link_mail" href="mailto:all@biff.kr"
+                        >all@biff.kr</a
+                      >
+                    </div>
+
+                    <div class="team">
+                      <span class="name">IT business</span>
+                      <a class="link_mail" href="mailto:webmaster@biff.kr"
+                        >webmaster@biff.kr</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-6">
+                <div class="contact_li">
+                  <strong class="tit-sec">Publicity</strong>
+
+                  <div class="mt20">
+                    <div class="team">
+                      <span class="name">PR Team</span>
+                      <a class="link_mail" href="mailto:pr@biff.kr"
+                        >pr@biff.kr</a
+                      >
+                      <a class="link_mail" href="mailto:foreignpress@biff.kr"
+                        >foreignpress@biff.kr</a
+                      >
+                    </div>
+
+                    <div class="team">
+                      <span class="name">Content Creation Team</span>
+                      <a class="link_mail" href="mailto:content@biff.kr"
+                        >content@biff.kr</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-6">
+                <div class="contact_li">
+                  <strong class="tit-sec">Program</strong>
+
+                  <div class="mt20">
+                    <div class="team">
+                      <span class="name">Program Team</span>
+                      <a class="link_mail" href="mailto:program@biff.kr"
+                        >program@biff.kr</a
+                      >
+                    </div>
+
+                    <div class="team">
+                      <span class="name">Guest Service Team</span>
+                      <a class="link_mail" href="mailto:guest@biff.kr"
+                        >guest@biff.kr</a
+                      >
+                    </div>
+
+                    <div class="team">
+                      <span class="name">Film Screening &amp; Subtitling</span>
+                      <a class="link_mail" href="mailto:tech@biff.kr"
+                        >tech@biff.kr</a
+                      >
+                      <a class="link_mail" href="mailto:subtitle@biff.kr"
+                        >subtitle@biff.kr</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-6">
+                <div class="contact_li">
+                  <strong class="tit-sec">Community BIFF</strong>
+
+                  <div class="mt20">
+                    <div class="team">
+                      <span class="name">Customer Service Relations</span>
+                      <a class="link_mail" href="mailto:cs@biff.kr"
+                        >cs@biff.kr</a
+                      >
+                    </div>
+
+                    <div class="team">
+                      <span class="name">Community BIFF Team</span>
+                      <a class="link_mail" href="mailto:community@biff.kr"
+                        >community@biff.kr</a
+                      >
+                    </div>
+
+                    <div class="team">
+                      <span class="name">BIFF EVERYWHERE</span>
+                      <a class="link_mail" href="mailto:everywhere@biff.kr"
+                        >everywhere@biff.kr</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-6">
+                <div class="contact_li">
+                  <strong class="tit-sec font_20"
+                    >Asian Contents &amp; Film Market</strong
+                  >
+
+                  <div class="mt20">
+                    <div class="team">
+                      <span class="name">ACFM Management</span>
+                      <a class="link_mail" href="mailto:badge@acfm.kr"
+                        >badge@acfm.kr</a
+                      >
+                      <a class="link_mail" href="mailto:event@acfm.kr"
+                        >event@acfm.kr</a
+                      >
+                    </div>
+
+                    <div class="team">
+                      <span class="name">Market Sales &amp; Operations</span>
+                      <a class="link_mail" href="mailto:exhibition@acfm.kr"
+                        >exhibition@acfm.kr</a
+                      >
+                    </div>
+
+                    <div class="team">
+                      <span class="name">Story Market</span>
+                      <a class="link_mail" href="mailto:ip@acfm.kr"
+                        >ip@acfm.kr</a
+                      >
+                    </div>
+
+                    <div class="team">
+                      <span class="name">Support Program</span>
+                      <a class="link_mail" href="mailto:acf@biff.kr"
+                        >ACF - acf@biff.kr</a
+                      >
+                      <a class="link_mail" href="mailto:apm@biff.kr"
+                        >APM - apm@biff.kr</a
+                      >
+                      <a class="link_mail" href="mailto:platform@acfm.kr"
+                        >Platform BUSAN - platform@acfm.kr</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-6">
+                <div class="contact_li">
+                  <strong class="tit-sec">External Relations</strong>
+
+                  <div class="mt20">
+                    <div class="team">
+                      <span class="name">Marketing Team</span>
+                      <a class="link_mail" href="mailto:marketing@biff.kr"
+                        >marketing@biff.kr</a
+                      >
+                    </div>
+                  </div>
+
+                  <div
+                    class="mt30"
+                    style="border-top: 1px solid #e0e0e0; padding: 30px 0 0 0"
+                  >
+                    <strong class="tit-sec">Jiseok Film Institute</strong>
+
+                    <div class="team">
+                      <a class="link_mail" href="mailto:forum@biff.kr"
+                        >forum@biff.kr</a
+                      >
+                    </div>
+
+                    <div class="team">
+                      <span class="name">BIFF Asian Film Academy</span>
+                      <a class="link_mail" href="mailto:bafa@biff.kr"
+                        >bafa@biff.kr</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--//row-->
+          </div>
+        </div>
+      </div>
+    </div>
+    ${require('./include/_footer.html')}
+  </body>
+</html>

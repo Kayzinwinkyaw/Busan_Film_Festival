@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div id="snb" class="snb">
+      <div class="container-xxl">
+        <ul class="list-inline snb_ul" id="snbul1">
+          <li class="">
+            <a href="/dist/introduction.html" target="_top"
+              >Introduction</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/view.html" target="_top"
+              >Overview</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/program_section.html" target="_top"
+              >Program Sections</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/awards.html" target="_top"
+              >Awards</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/programmers.html" target="_top"
+              >Programmers</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/team.html" target="_top"
+              >The Team</a
+            >
+          </li>
+          <li class="current">
+            <a href="/dist/sponsorship.html" target="_top"
+              >Sponsorship</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">Sponsorship</h2>
+          </div>
+        </div>
+      </div>
+      <div class="page sponsorship">
+        <div class="container-sm">
+          <div class="">
+            <div class="">
+              <!-- 1 -->
+              <div class="">
+                <img src="/assets/imgs/sub/sponsorship/img_sponsor_01.jpg" />
+              </div>
+            </div>
+          </div>
+
+          <p class="desc mt50">
+            The Busan International Film Festival is the best film festival in
+            Asia that presents Korean and Asian films to the global film
+            industry. With differentiated programs and films that reflect
+            diverse perspectives of Asian directors, the Busan International
+            Film Festival provides a novel experience to the audience. To
+            contribute to the development of Asian film industry, the Busan
+            International Film Festival operates various programs for support
+            such as fostering talents, production support, and distribution.
+            <br />
+            The Busan International Film Festival provides various marketing
+            opportunities through its sponsorship program. It provides brand
+            exposure, advertisements, invitation to the film festival, and other
+            benefits to the companies that participate in the sponsorship, and
+            new collaborative opportunities can be developed according to the
+            sponsor's needs.
+          </p>
+
+          <h5 class="h5_tit mt50">Contact</h5>
+
+          <p class="desc ml20" style="font-weight: 400">
+            <b>Marketing Team</b> | E-mail:
+            <a href="mailto:marketing@biff.kr">marketing@biff.kr</a>
+          </p>
+        </div>
+
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+
+        <!--//END: CONTENTS AREA-->
+      </div>
+    </div>
+    ${require('./include/_footer.html')}
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div id="snb" class="snb">
+      <div class="container-xxl">
+        <ul class="list-inline snb_ul" id="snbul1">
+          <li class="">
+            <a href="/dist/submission_guide.html" target="_top"
+              >Submission Guide</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/official_selection.html" target="_top"
+              >Official Selection</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/film_academy.html" target="_top"
+              >CHANEL X BIFF Asian Film Academy</a
+            >
+          </li>
+          <li class="current">
+            <a href="/dist/project_market.html" target="_top"
+              >Asian Project Market</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/cinema_fund.html" target="_top">Asian Cinema Fund</a>
+          </li>
+          <li class="">
+            <a href="/dist/platform_busan.html" target="_top">Platform BUSAN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">Asian Project Market</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container-m">
+        <div class="container-xl">
+          <div class="d3tab_basic">
+            <ul id="depth3" class="depth3_ul">
+              <li class="depth3_li on 1_0">
+                <a href="/dist/project_market.html" target="_top">APM</a>
+              </li>
+              <li class="depth3_li on_1_1">
+                <a href="https://acf.biff.kr/eng/addon/10000001/page.asp?page_num=7352" target="_top"
+                  >Application</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page project_market">
+        <div class="container-sm">
+          <div class="">
+            <h4 class="tit-sec mt50">
+              Start of the Most Promising Asian Film Projects!
+            </h4>
+
+            <p class="desc">
+              Launched in 1998 at the 3rd Busan International Film Festival,
+              Asian Project Market (APM, formerly Pusan Promotion Plan; PPP) has
+              connected talented Asian directors with booming new projects to
+              professionals from film industry world-wide.
+              <br /><br />Ranging from big-scale commercial film projects to
+              low-budget indie ones, each year APM brings together fresh feature
+              film projects and global film investors, producers, and
+              distributors. Numerous APM projects have already made it through
+              to completion and received positive responses from both film
+              festivals and international audiences. As such, APM continues to
+              earn greater interest from filmmakers around the world.
+              <br /><br />The 27th Asian Project Market will take place for four
+              days from 5th to 8th October in 2024. Please feel free to contact
+              APM team for any inquiries about participation in APM as either
+              project teams or industry guests.
+            </p>
+
+            <img src="/assets/imgs/sub/project_market/img_apm.jpg" alt="" class="mt30" />
+            <h5 class="h5_tit mt50">Asian Project Market 2024</h5>
+
+            <div class="table02 mt20">
+              <dl>
+                <dt>Dates</dt>
+                <dd>5-8 October 2024</dd>
+              </dl>
+              <dl>
+                <dt>Venue</dt>
+                <dd>
+                  At the Asian Contents &amp; Film Market (ACFM), BEXCO, Busan
+                </dd>
+              </dl>
+              <dl>
+                <dt>Contact</dt>
+                <dd><a href="mailto:apm@biff.kr">apm@biff.kr</a></dd>
+              </dl>
+            </div>
+
+            <h5 class="h5_tit mt50">How to Participate</h5>
+
+            <div class="table02 mt20">
+              <dl>
+                <dt>Project</dt>
+                <dd>Submit your project by 31 May 2024</dd>
+              </dl>
+              <dl>
+                <dt>Industry Guests</dt>
+                <dd>Register Asian Contents &amp; Film Market Badge</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    ${require('./include/_footer.html')}
+  </body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div id="snb" class="snb">
+      <div class="container-xxl">
+        <ul class="list-inline snb_ul" id="snbul1">
+          <li class="">
+            <a href="/dist/introduction.html" target="_top"
+              >Introduction</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/view.html" target="_top"
+              >Overview</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/program_section.html" target="_top"
+              >Program Sections</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/awards.html" target="_top"
+              >Awards</a
+            >
+          </li>
+          <li class="current">
+            <a href="/dist/programmers.html" target="_top"
+              >Programmers</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/team.html" target="_top"
+              >The Team</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/sponsorship.html" target="_top"
+              >Sponsorship</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">Programmers</h2>
+          </div>
+        </div>
+      </div>
+      <div class="page page1-5">
+        <div class="container-sm">
+          <div class="programer row">
+            <div class="col-12">
+              <h3 class="heading1">Asian Cinema</h3>
+
+              <div class="row gx-md-50 programmer_cont">
+                <div class="col-12 col-md-6 col-lg-4 gx-md-50">
+                  <div class="programer_li">
+                    <div class="info">
+                      <p class="pname">
+                        NAM Dong-chul
+                        <span class="psection">Program Director</span>
+                      </p>
+                    </div>
+                    <img
+                      alt=""
+                      class="img-responsive center-block"
+                      src="/assets/imgs/sub/programmers/pic001.jpg"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 gx-md-50">
+                  <div class="programer_li">
+                    <div class="info">
+                      <p class="pname">
+                        PARK Sun Young <span class="psection">Programmer</span>
+                      </p>
+                    </div>
+                    <img
+                      alt=""
+                      class="img-responsive center-block"
+                      src="/assets/imgs/sub/programmers/pic002.jpg"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 gx-md-50">
+                  <div class="programer_li">
+                    <div class="info">
+                      <p class="pname">
+                        PARK Sungho<span class="psection"> Programmer</span>
+                      </p>
+                    </div>
+                    <img
+                      alt=""
+                      class="img-responsive center-block"
+                      src="/assets/imgs/sub/programmers/pic003.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- // row -->
+            </div>
+            <!-- // col-12 -->
+
+            <div class="col-12 mt-10">
+              <h3 class="heading1">World Cinema</h3>
+
+              <div class="row gx-md-50 programmer_cont">
+                <div class="col-12 col-md-6 col-lg-4 gx-md-50">
+                  <div class="programer_li">
+                    <div class="info">
+                      <p class="pname">
+                        PAK Dosin<span class="psection"
+                          >Senior Programmer
+                        </span>
+                      </p>
+                    </div>
+                    <img
+                      alt=""
+                      class="img-responsive center-block"
+                      src="/assets/imgs/sub/programmers/pic004.jpg"
+                    />
+                  </div>
+                  <p style="text-align: left">© CINE21</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 gx-md-50">
+                  <div class="programer_li">
+                    <div class="info">
+                      <p class="pname">
+                        SEO Seunghee <span class="psection">Programmer </span>
+                      </p>
+                    </div>
+                    <img
+                      alt=""
+                      class="img-responsive center-block"
+                      src="/assets/imgs/sub/programmers/pic005.jpg"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 gx-md-50">
+                  <div class="programer_li">
+                    <div class="info">
+                      <p class="pname">
+                        Karen PARK <span class="psection">Programmer</span>
+                      </p>
+                    </div>
+                    <img
+                      alt=""
+                      class="img-responsive center-block"
+                      src="/assets/imgs/sub/programmers/pic006.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-10">
+              <div class="row gx-md-50 programmer_cont">
+                <div class="col-12 col-md-6 col-lg-4 gx-md-50">
+                  <h3 class="heading1">Korean Cinema</h3>
+
+                  <div class="programer_li">
+                    <div class="info">
+                      <p class="pname">
+                        JUNG Hanseok <span class="psection">Programmer</span>
+                      </p>
+                    </div>
+                    <img
+                      alt=""
+                      class="img-responsive center-block"
+                      src="/assets/imgs/sub/programmers/pic007.jpg"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 gx-md-50">
+                  <h3 class="heading1">Wide Angle</h3>
+
+                  <div class="programer_li">
+                    <div class="info">
+                      <p class="pname">
+                        KANG Sowon <span class="psection">Programmer</span>
+                      </p>
+                    </div>
+                    <img
+                      alt=""
+                      class="img-responsive center-block"
+                      src="/assets/imgs/sub/programmers/pic008.jpg"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 gx-md-50">
+                  <h3 class="heading1">Community BIFF</h3>
+
+                  <div class="programer_li">
+                    <div class="info">
+                      <p class="pname">
+                        JUNG Mi <span class="psection">Programmer</span>
+                      </p>
+                    </div>
+                    <img
+                      alt=""
+                      class="img-responsive center-block"
+                      src="/assets/imgs/sub/programmers/pic009.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    ${require('./include/_footer.html')}
+  </body>
+</html>

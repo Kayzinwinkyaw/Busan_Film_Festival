@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div id="snb" class="snb">
+      <div class="container-xxl">
+        <ul class="list-inline snb_ul" id="snbul1">
+          <li class="">
+            <a href="/dist/submission_guide.html" target="_top"
+              >Submission Guide</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/official_selection.html" target="_top"
+              >Official Selection</a
+            >
+          </li>
+          <li class="current">
+            <a href="/dist/film_academy.html" target="_top"
+              >CHANEL X BIFF Asian Film Academy</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/project_market.html" target="_top"
+              >Asian Project Market</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/cinema_fund.html" target="_top">Asian Cinema Fund</a>
+          </li>
+          <li class="">
+            <a href="/dist/platform_busan.html" target="_top">Platform BUSAN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">CHANEL X BIFF Asian Film Academy</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container-m">
+        <div class="container-xl">
+          <div class="d3tab_basic">
+            <ul id="depth3" class="depth3_ul">
+              <li class="depth3_li on 1_0">
+                <a href="/dist/film_academy.html" target="_top"
+                  >BAFA 2024</a
+                >
+              </li>
+              <li class="depth3_li on_1_1">
+                <a href="/dist/application_guidelines.html" target="_top"
+                  >Application Guidelines</a
+                >
+              </li>
+              <li class="depth3_li on_1_1">
+                <a href="/dist/faq.html" target="_top">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page film_acedemy">
+        <div class="container-sm">
+          <div class="">
+            <h4 class="tit-sec mt50">
+              Film education program for promising filmmakers who will lead
+              Asian cinema
+            </h4>
+            <p class="desc mb50">
+              CHANEL X BIFF Asian Film Academy will select 24 promising
+              filmmakers from different Asian countries to participate in the
+              program that includes short film production, workshops, mentoring
+              and masterclasses. The completed short films by the fellows will
+              be officially screened at the Busan International Film Festival.
+              The program will receive applications from emerging talents in
+              cinema from March 4 (Mon) to April 12 (Fri).
+            </p>
+
+            <img src="/assets/imgs/sub/film_academy/img_biff01.jpg" alt="" />
+
+            <div class="txt-center mt50">
+              <a
+                href="https://bafa.biff.kr/eng/"
+                target="_blank"
+                class="btn_badge"
+                >BAFA Website</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    ${require('./include/_footer.html')}
+  </body>
+</html>
