@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div id="snb" class="snb">
+      <div class="container-xxl">
+        <ul class="list-inline snb_ul" id="snbul1">
+          <li class="">
+            <a href="/dist/newsletter.html" target="_top">Newsletter</a>
+          </li>
+          <li class="">
+            <a href="/dist/videos.html" target="_top">Videos</a>
+          </li>
+          <li class="current">
+            <a href="/dist/selection_review.html" target="_top"
+              >Selection Review</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">Selection Review</h2>
+          </div>
+        </div>
+      </div>
+      <div class="page selection_review">
+        <div class="container-sm">
+          <div class="sub_tit_wrap cont" style="padding: 0">
+            <div class="container-s">
+              <div class="select-custom select-board" style="display: none">
+                <div class="select">
+                  <a href="javascript:set_search('id');"
+                    ><img
+                      src="Skin/Board/Webzine/VER20_WEBZINE_BIFF_Review/images/search_id.gif"
+                      name="s_id_chk"
+                      border="0"
+                      align="absmiddle" /></a
+                  >&nbsp;&nbsp;
+                  <a href="javascript:set_search('name');"
+                    ><img
+                      src="Skin/Board/Webzine/VER20_WEBZINE_BIFF_Review/images/search_name-1.gif"
+                      name="s_name_chk"
+                      border="0"
+                      align="absmiddle" /></a
+                  >&nbsp;&nbsp;
+                  <a href="javascript:set_search('subject');"
+                    ><img
+                      src="Skin/Board/Webzine/VER20_WEBZINE_BIFF_Review/images/search_subject-1.gif"
+                      name="s_subject_chk"
+                      border="0"
+                      align="absmiddle" /></a
+                  >&nbsp;&nbsp;
+                  <a href="javascript:set_search('content');"
+                    ><img
+                      src="Skin/Board/Webzine/VER20_WEBZINE_BIFF_Review/images/search_content.gif"
+                      name="s_content_chk"
+                      border="0"
+                      align="absmiddle" /></a
+                  >&nbsp;&nbsp;
+                </div>
+              </div>
+              <div class="row mb30">
+                <div class="qserach_wrap">
+                  <div class="inp_search_wrap">
+                    <input
+                      type="text"
+                      name="searchWord"
+                      id="searchWord"
+                      class="inp_search"
+                      value=""
+                      onkeypress="check_enter('search');"
+                      placeholder="search"
+                      onfocus="this.placeholder=''"
+                    />
+                    <a href="javascript:OnSearch();" class="btn_arc_search"
+                      >검색</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cont">
+            <div class="container-s">
+              <form name="theForm" method="post">
+                <div class="wz_list">
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80153');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68628">
+                        <img src="/assets/imgs/sub/selection_review/1.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘The Spark’: Busan Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        New Currents
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/19</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> screen
+                          international - NAMRATA JOSHI
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80152');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68235">
+                        <img src="/assets/imgs/sub/selection_review/2.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘Heritage’: Busan Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        New Currents
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/19</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> screen
+                          international - AMBER WILKINSON
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80151');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68619">
+                        <img src="/assets/imgs/sub/selection_review/3.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘After The Fever’: Busan Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        New Currents
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/19</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> screen
+                          international - LEE MARSHALL
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80150');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68550">
+                        <img src="/assets/imgs/sub/selection_review/4.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘That Summer’s Lie’: Busan Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        New Currents
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/19</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> screen
+                          international - LEE MARSHALL
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80149');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="66233">
+                        <img src="/assets/imgs/sub/selection_review/5.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘The Wrestler’: Busan Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        New Currents
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/19</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> screen
+                          international - JOHN BERRA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80148');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68610">
+                        <img src="/assets/imgs/sub/selection_review/6.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘The Stranger’: Busan Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        New Currents
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/19</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> screen
+                          international - NAMRATA JOSHI
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80147');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68579">
+                        <img src="/assets/imgs/sub/selection_review/7.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style="">[BIFF2023] ‘Moro’: Busan Review</span>
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">Jiseok</div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/19</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> screen
+                          international - ALLAN HUNTER
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80146');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68572">
+                        <img src="/assets/imgs/sub/selection_review/8.jfif" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘24 Hours With Gaspar’: Busan Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        Renaissance of Indonesian Cinema
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/18</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> screen
+                          international - ALLAN HUNTER
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80145');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68611">
+                        <img src="/assets/imgs/sub/selection_review/9.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘Borrowed Time’: Busan Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        New Currents
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/18</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> screen
+                          international - JOHN BERRA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80144');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="65012">
+                        <img src="/assets/imgs/sub/selection_review/10.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘Oasis Of Now’: Busan Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        New Currents
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/18</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> screen
+                          international - AMBER WILKINSON
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80143');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68580">
+                        <img src="/assets/imgs/sub/selection_review/11.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style="">[BIFF2023] ‘The Peasants’ Review</span>
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        Flash Forward
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/18</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> variety -
+                          Jessica Kiang
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80142');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68593">
+                        <img src="/assets/imgs/sub/selection_review/12.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘Vincent Must Die’ Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        World Cinema
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/18</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> variety -
+                          Jessica Kiang
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80141');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68571">
+                        <img src="/assets/imgs/sub/selection_review/13.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style="">[BIFF2023] ‘In Our Day’ Review</span>
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">Icons</div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/18</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> variety -
+                          Jessica Kiang
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80140');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68515">
+                        <img src="/assets/imgs/sub/selection_review/14.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘Bride Kidnapping’ Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">Jiseok</div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/18</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> variety -
+                          Jessica Kiang
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80139');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="65912">
+                        <img src="/assets/imgs/sub/selection_review/15.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘House of the Seasons’ Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        Korean Cinema Today - Vision
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/18</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> variety -
+                          Jessica Kiang
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80138');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68600">
+                        <img src="/assets/imgs/sub/selection_review/16.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘Concerning My Daughter’ Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        Korean Cinema Today - Vision
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/18</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> variety -
+                          Jessica Kiang
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80137');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68577">
+                        <img src="/assets/imgs/sub/selection_review/17.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘The Monk and the Gun’ Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        A Window on Asian Cinema
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/18</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> variety -
+                          Peter Debruge
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80136');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="66846">
+                        <img src="/assets/imgs/sub/selection_review/18.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] ‘Inshallah a Boy’ Review</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        A Window on Asian Cinema
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/18</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> variety -
+                          Jessica Kiang
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80132');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="68572">
+                        <img src="/assets/imgs/sub/selection_review/19.jfif" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] 24 Hours with Gaspar (2023) by Yosep
+                          ..</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        Renaissance of Indonesian Cinema
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/11</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> ASIAN MOVIE
+                          PULSE - Panos Kotzathanasis
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wz_li col-12 col-md-6">
+                    <a
+                      href="javascript:OnReadArticle('80131');"
+                      target=""
+                      class="cover"
+                    ></a>
+                    <div class="wz_thumb">
+                      <div class="thumb" a="66932">
+                        <img src="/assets/imgs/sub/selection_review/20.jpg" />
+                      </div>
+                    </div>
+
+                    <div class="txtbox">
+                      <p class="tit">
+                        <span style=""
+                          >[BIFF2023] The Scavenger of Dreams (2023) by
+                          Sum..</span
+                        >
+                      </p>
+                      <div class="wz_desc desc ellipsis-multiline">
+                        A Window on Asian Cinema
+                      </div>
+                      <div class="info">
+                        <!-- <div class="date en-serif italic">2023/12/11</div> -->
+                        <div class="name desc">
+                          <span class="en-serif italic">By</span> ASIAN MOVIE
+                          PULSE - Panos Kotzathanasis
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="pagenation">
+                <i class="current" data-paging="1">1</i>
+                <a href="javascript:OnPageMove(2);" data-paging="2"
+                  ><span>2</span></a
+                >
+                <a href="javascript:OnPageMove(3);" data-paging="3"
+                  ><span>3</span></a
+                >
+                <a href="javascript:OnPageMove(4);" data-paging="4"
+                  ><span>4</span></a
+                >
+                <a href="javascript:OnPageMove(5);" data-paging="5"
+                  ><span>5</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // sub content -->
+      </div>
+    </div>
+    ${require('./include/_footer.html')}
+  </body>
+</html>
