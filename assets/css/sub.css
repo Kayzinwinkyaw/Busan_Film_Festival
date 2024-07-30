@@ -2000,6 +2000,19 @@ a.cover {
 .cont_archive .desc-s {
   color: #666;
 }
+.poster_box{
+  display: flex;
+}
+.poster_box .col-md-3{
+  width: 20%;
+}
+.poster_box .col-md-3 .poster_img{
+  width: 100%;
+  max-height: 396px;
+}
+.poster_box .col-md-8{
+  width: 80%;
+}
 /* history end */
 
 /* selection_review start */
