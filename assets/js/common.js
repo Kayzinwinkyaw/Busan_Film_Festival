@@ -84,20 +84,49 @@ $(document).ready(function () {
   });
   var commonCates = document.querySelectorAll(".common_cate");
   var lastOpenedMenu = null;
+  var lastActiveCate = null;
   commonCates.forEach(function (cate) {
-    cate.onclick = function () {
+    cate.addEventListener("click", function () {
       var cate1Gp = cate.nextElementSibling;
+
       if (lastOpenedMenu && lastOpenedMenu !== cate1Gp) {
         lastOpenedMenu.classList.add("hidden");
       }
+
       if (cate1Gp && cate1Gp.classList.contains("common_cate1_gp")) {
         cate1Gp.classList.toggle("hidden");
+
         if (!cate1Gp.classList.contains("hidden")) {
           lastOpenedMenu = cate1Gp;
         } else {
           lastOpenedMenu = null;
         }
       }
-    };
+
+      var subCategories = cate1Gp.querySelectorAll(".common_cate1");
+      subCategories.forEach(function (subCate) {
+        subCate.addEventListener("click", function (e) {
+          e.stopPropagation();
+
+          var id =
+            subCate.getAttribute("data_id") || subCate.getAttribute("data-id");
+          var parentCate = document.querySelector(`#blah${id}`);
+
+          if (parentCate) {
+            parentCate.textContent = subCate.textContent;
+          }
+
+          // Close the subcategory menu
+          cate1Gp.classList.add("hidden");
+          lastOpenedMenu = null;
+
+          if (lastActiveCate) {
+            lastActiveCate.classList.remove("has-active");
+          }
+          cate.classList.add("has-active");
+          lastActiveCate = cate;
+        });
+      });
+    });
   });
 });
