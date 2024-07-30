@@ -53,9 +53,9 @@
 
 .container-sm,
 .container-md {
+  max-width: 1192px;
+  width: 100%;
   margin-bottom: 120px;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
 }
 
 .container-sm img {
@@ -1713,10 +1713,9 @@ a.cover {
   color: #fff;
 }
 .arc_pgl .pg_li .film_thumb img {
-  width: auto;
+  width: 100%;
   height: 100%;
   opacity: 0.9;
-  max-width: fit-content;
   transform: scale(1.1);
   transition: 0.3s ease;
 }
@@ -1838,6 +1837,168 @@ a.cover {
   padding: 10px;
   text-align: center;
   border-left: 1px solid #ddd;
+}
+.showing .common_cate_gp{
+  display: flex;
+  justify-content: flex-start;
+}
+.showing .common_cate_gp::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: url(/assets/imgs/sub/showing/ico_filter.png) no-repeat 50% 50%;
+}
+.showing .common_cate_gp .common_cates{
+  border: 1px solid #ddd;
+  width: 350px;
+  height: fit-content;
+}
+.showing .common_cate_gp .common_cate{
+    border: 0;
+    padding: 8px 8px 7px 8px;
+    width: 350px;
+    margin-right: 4px;
+    font-size: 15px;
+    color: #888;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+}
+.showing .common_cate_gp .common_cate::after{
+  background: url(/assets/imgs/sub/showing/ico_dropdown_filter.png);
+  background-repeat: no-repeat;
+  top: 70%;
+  left: 95%;
+}
+.showing .common_cate_gp .common_cate1_gp{
+  top: 40px;
+  width: 350px;
+  max-height: 320px;
+}
+.cont_archive .arc_award .arc_award_li {
+  padding: 30px 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+.jury {
+  position: relative;
+  width: 100%;
+}
+.jury .jury_li {
+  display: flex;
+  width: 100%;
+  padding: 40px 0;
+}
+.cont_archive .arc_jury .jury_li .jury_img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.cont_archive .arc_jury .jury_li .jury_img img {
+  min-height: 200px;
+}
+.jury .jury_li .jury_img img {
+  width: 100%;
+  height: auto;
+}
+.jury .jury_li .jury_txt {
+  width: 75%;
+  padding-left: 50px;
+  padding-top: 0;
+}
+.jury .jury_li .jury_txt .name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111;
+  letter-spacing: -1px;
+}
+.jury .jury_li .jury_txt .jury_info {
+  margin-top: 10px;
+}
+.jury .jury_li .jury_txt .jury_info > span {
+  position: relative;
+  display: inline-block;
+  padding-right: 19px;
+  margin-right: 12px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #111;
+  font-weight: 500;
+}
+.jury .jury_li .jury_txt .jury_info > span:after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 15px;
+  position: absolute;
+  top: 6px;
+  right: 0;
+  background: #999;
+}
+.cont_archive .arc_award .award_film {
+  display: flex;
+  margin-top: 30px;
+}
+.cont_archive .arc_award .award_film .award_film_li {
+  width: 25%;
+  padding-right: 20px;
+}
+.cont_archive .arc_award .award_film .award_film_li .thumb img {
+  width: 100%;
+  max-height: 150px;
+}
+.cont_archive .arc_award .award_film .award_film_li .txtbox {
+  width: 100%;
+  padding: 15px 0;
+  position: relative;
+}
+.cont_archive .arc_award .award_film .award_film_li .txtbox .film_tit {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.cont_archive .arc_award .award_film .award_film_li .info li:first-child {
+  padding-left: 0;
+}
+.cont_archive .arc_award .award_film .award_film_li .info li {
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #888;
+  word-break: break-word;
+}
+.cont_archive .arc_award .award_film .award_film_li .info li:after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  background: #aaa;
+}
+.cont_archive .arc_award .award_film .award_film_li .info li:last-child::after{
+  display: none;
+}
+.bold {
+  font-weight: bold !important;
+}
+.not_bold{
+  font-weight: lighter !important;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mb80 {
+  margin-bottom: 80px;
+}
+.cont_archive .identity_bd {
+  padding-left: 30px;
+}
+.cont_archive .desc-s {
+  color: #666;
 }
 /* history end */
 
