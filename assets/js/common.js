@@ -2,34 +2,35 @@ $(document).ready(function () {
   AOS.init();
   $(".all_search_input").hide();
 
-  const menuItems = document.querySelectorAll("#gnbmenuids > li");
-  const currentUrl = window.location.pathname;
+  const navLinks = document.querySelectorAll('.nav_link');
+  const subNavLinks = document.querySelectorAll('.sub_navLinks a');
 
-  console.log("Current URL:", currentUrl); // Debug log
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
 
-  menuItems.forEach((item) => {
-    const anchor = item.querySelector("a");
-    console.log(
-      "Checking:",
-      anchor ? anchor.getAttribute("href") : "no anchor"
-    ); // Debug log
-    if (anchor && anchor.getAttribute("href") === currentUrl) {
-      console.log("Match found:", anchor.getAttribute("href")); // Debug log
-      item.classList.add("active2");
-    } else {
-      item.classList.remove("active2");
-    }
+      navLinks.forEach(nav => nav.classList.remove('active'));
+      document.querySelectorAll('.sub_navLinks').forEach(subNav => subNav.classList.remove('active'));
 
-    item.addEventListener("click", function (event) {
-      // Remove the 'active2' class from all items
-      menuItems.forEach((el) => el.classList.remove("active2"));
+      this.classList.add('active');
 
-      // Add the 'active2' class to the clicked item
-      this.classList.add("active2");
+      const subNav = this.nextElementSibling;
+      if (subNav && subNav.classList.contains('sub_navLinks')) {
+        subNav.classList.add('active');
+      }
+    });
+  });
 
-      // Allow the link to work by navigating to the href of the clicked item
-      const targetUrl = this.querySelector("a").getAttribute("href");
-      window.location.href = targetUrl;
+  subNavLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      // Remove the 'active' class from all sub-nav links
+      subNavLinks.forEach(subLink => subLink.classList.remove('active'));
+
+      // Add the 'active' class to the clicked sub-nav link
+      this.classList.add('active');
+
     });
   });
 

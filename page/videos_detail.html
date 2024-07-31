@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div class="container container-sm">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">Videos</h2>
+          </div>
+        </div>
+      </div>
+      <div class="page videos_detail">
+        <div class="container-xl">
+          <div class="brd_view">
+            <div class="brd_top">
+              <h2 class="tit">#BIFF2023_Credit</h2>
+              <p class="media_type special">BIFF2023</p>
+            </div>
+
+            <div class="media_bd">
+              <iframe
+                width="1046"
+                height="588"
+                src="https://www.youtube.com/embed/36lI5LW9-aQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""
+              ></iframe>
+              <div class="txtbox m-wid100">
+                <p class="desc"></p>
+              </div>
+
+              <!--// 내용 끝 -->
+            </div>
+
+            <div class="brd_arrows">
+              <a href="/dist/videos.html" class="btn_page_list"
+                ><span>List</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    ${require('./include/_footer.html')}
+  </body>
+</html>

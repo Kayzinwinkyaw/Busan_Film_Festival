@@ -19,6 +19,7 @@ html,body{
   margin-right: auto;
   margin-left: auto;
 }
+/* header start */
 #hd {
   position: absolute;
   margin: 0 auto;
@@ -256,6 +257,84 @@ html,body{
   font-size: 16px;
   color: var(--bs-white) !important; 
 }
+header {
+  background-color: var(--bs-black);
+  color:var(--bs-white);
+}
+.header_container {
+  max-width: 1750px;
+  margin: 0 auto;
+  width: 95%;
+  height: 100%;
+}
+header .middle_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .middle_header .mainlogo img {
+  width: 250px;
+}
+header .middle_header .nav_links {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  height: fit-content;
+  padding: 30px 0px;
+}
+header .middle_header .nav_links li .nav_link {
+  color: var(--bs-white);
+  display: inline-block;
+  font-size: 20px;
+  width: fit-content;
+  padding: 10px 20px;
+  border-bottom: 4px solid transparent;
+  white-space: nowrap;
+  font-weight: 600;
+}
+header .middle_header .nav_links li .nav_link.active {
+  border-bottom: 4px solid red;
+}
+
+header .middle_header .nav_links .sub_navLinks {
+  display: none;
+  justify-content: center;
+  gap:15px;
+  height: fit-content;
+  padding:15px 0px;
+  position: absolute;
+  top: 178px;
+  z-index: 99;
+  width: 100%;
+  left: 0;
+  background-color: var(--bs-black);
+}
+header .middle_header .nav_links .sub_navLinks.active {
+  display: flex;
+}
+header .middle_header .nav_links .sub_navLinks.active a.active { 
+  color: var(--bs-white);
+}
+header .middle_header .nav_links .sub_navLinks a{
+    font-size: 16px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, .6);
+    padding: 0 10px;
+    letter-spacing: -0.5px;
+}
+header .middle_header .logo_gp {
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+header .middle_header .logo_gp a:nth-child(1) img {
+  width: 110px;
+}
+header .middle_header .logo_gp a img {
+  width: 90px;
+ }
+ /* header end */
+
 /* footer start */
 .footer{
     margin: 0;
