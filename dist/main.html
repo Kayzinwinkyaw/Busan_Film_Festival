@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project Name</title>
+
+<!-- CSS -->
+<link
+  href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="../assets/css/reset.css" />
+<link rel="stylesheet" href="../assets/css/common.css" />
+<link rel="stylesheet" href="../assets/css/fonts.css" />
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/sub.css" />
+
+<link rel="stylesheet" href="../assets/css/media.css" />
+<link rel="stylesheet" href="../assets/css/media1.css" />
+<link rel="stylesheet" href="../assets/css/media2.css">
+<link rel="stylesheet" href="../assets/css/media3.css">
+
+<!-- AOS animation library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<!-- Jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<!-- AOS animation library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Common script -->
+<script src="../assets/js/common.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script>
+            (function(d) {
+              var config = {
+                kitId: 'adw8piw',
+                scriptTimeout: 3000,
+                async: true
+              },
+              h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+        </script>
+    </head>
+    <body>
+      <header class="hd main fixed-top" id="hd">
+  <div class="container-xxl header_container">
+    <div class="header_top">
+      <div class="other_home">
+          <ul>
+              <li class="on">
+                  <a href="https://www.biff.kr/eng/">BIFF</a>
+              </li>
+              <li>
+                  <a href="https://www.acfm.kr/eng/" target="_blank">ACFM
+                      <span>
+                          <img src="/assets/imgs/common/other_home_acfm.png" alt="">
+                      </span>
+                  </a>
+                  <ul>
+                      <li>
+                          <a href="https://apm.biff.kr/eng/" target="_blank">APM</a>
+                      </li>
+                      <li>
+                          <a href="https://acf.biff.kr/eng/" target="_blank">ACF</a>
+                      </li>
+                      <li>
+                          <a href="https://www.globalottawards.org/eng/" target="_blank">ACA</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="https://bafa.biff.kr/eng/" target="_blank">BAFA</a>
+              </li>
+              <li>
+                  <a href="https://community.biff.kr/kor/" target="_blank">Community BIFF</a>
+              </li>
+              <li>
+                  <a href="https://forum.biff.kr/eng/" target="_blank">Forum BIFF</a>
+              </li>
+              <li>
+                  <a href="https://press.biff.kr/eng/" target="_blank">PRESS</a>
+              </li>
+              <li>
+                  <a href="" target="_blank">Archive</a>
+              </li>
+          </ul>
+      </div>
+      <div class="util">
+          <ul class="util_list">
+              <li>
+                  <a href="">KO</a>
+              </li>
+              <li>
+                  <a href="">
+                      <span>
+                          <img src="/assets/imgs/common/icon_search.png" alt="">
+                      </span>
+                      SEARCH
+                  </a>
+              </li>
+          </ul>
+      </div>
+    </div>
+    <div class="main_nav">
+        <div class="main_nav_left">
+            <h1 class="logo">
+                <a title="BIFF 홈" href="/dist/main.html">
+                    <img src="/assets/imgs/common/top_logo.svg" alt="부산국제영화제">
+                </a>
+            </h1>
+        </div>
+        <!-- main_nav_center -->
+         <div class="main_nav_center">
+            <div id="gnb" class="gnb">
+                <h2 class="screen_out">Main Menu</h2>
+                <nav>
+                    <ul class="list-inline depth1" id="gnbmenuids">
+                        <li class="active2">
+                            <a href="/dist/introduction.html">BIFF</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list1">
+                                    <li class="menu1_1">
+                                        <a href="/dist/introduction.html">Introduction</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_2">
+                                        <a href="/dist/view.html">Overview</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_3">
+                                        <a href="/dist/program_section.html">Program Sections</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_4">
+                                        <a href="/dist/awards.html">Awards</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_5">
+                                        <a href="/dist/programmers.html">Programmers</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_6">
+                                        <a href="/dist/team.html">The Team</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_7">
+                                        <a href="/dist/sponsorship.html">Sponsorship</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/submission_guide.html" target="_top">Submission</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list2">
+                                    <li class="menu2_1">
+                                        <a href="/dist/submission_guide.html" target="_top">Submission Guide</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_2">
+                                        <a href="/dist/official_selection.html" target="_top">Official Selection</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_3">
+                                        <a href="/dist/film_academy.html" target="_top">CHANEL X BIFF Asian Film Academy</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_4">
+                                        <a href="/dist/project_market.html" target="_top">Asian Project Market</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_5">
+                                        <a href="/dist/cinema_fund.html" target="_top">Asian Cinema Fund</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_6">
+                                        <a href="/dist/platform_busan.html" target="_top">Platform BUSAN</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/accreditation.html" target="_top">Accreditation</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list3">
+                                    <li class="menu3_1">
+                                        <a href="/dist/accreditation.html" target="_top">Accreditation</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_2">
+                                        <a href="/dist/festival.html" target="_top">Festival </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_3">
+                                        <a href="/dist/cinephile.html" target="_top">Cinephile </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_4">
+                                        <a href="/dist/press.html" target="_top">Press </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_5">
+                                        <a href="/dist/market.html" target="_top">Market </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_6">
+                                        <a href="/dist/accreditation_faq.html" target="_top">FAQ</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/newsletter.html" target="_top">BIFF Story</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list4">
+                                    <li class="menu4_1">
+                                        <a href="/dist/newsletter.html" target="_top">Newsletter</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu4_2">
+                                        <a href="/dist/videos.html" target="_top">Videos</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu4_3">
+                                        <a href="/dist/selection_review.html" target="_top">Selection Review</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/archive.html" target="_top">Archive</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list5">
+                                    <li class="menu5_1">
+                                        <a href="/dist/archive.html" target="_top">Archive Search</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu5_2">
+                                        <a href="/dist/history.html" target="_top">History</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/notice.html" target="_top">Community</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list6">
+                                    <li class="menu6_1">
+                                        <a href="/dist/notice.html" target="_top">Notice</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu6_2">
+                                        <a href="/dist/sns_hub.html" target="_top">SNS Hub</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+         </div>
+         <!-- main_nav_right -->
+         <div class="main_nav_right">
+            <h1 class="sponsor_logo">
+                <a href="" target="_blank">
+                    <img src="/assets/imgs/common/top_sponsor_logo_1.png" alt="부산은행">
+                </a>
+                <a href="" target="_blank">
+                    <img src="/assets/imgs/common/top_sponsor_logo_2.png" alt="제네시스">
+                </a>
+                <a href="" target="_blank">
+                    <img src="/assets/imgs/common/top_sponsor_logo_3.png" alt="샤넬">
+                </a>
+            </h1>
+         </div>
+    </div>
+  </div>
+  </header>
+       <div class="container">
+        <main class="main">
+          <h2 class="screen_out">홈 영역</h2>
+         <div id="visual">
+          <div class="swiper mainSwiper">
+            <div class="swiper-wrapper mainSwiper-wrapper">
+              <div class="swiper-slide main-swiper-slide">
+                <div class="imgBox">
+                  <img src="/assets/imgs/main/bg.jpg" alt="Image 1">
+                </div>
+                <div class="visual_txtbox2">
+                  <p class="txt2">
+                    29th BUSAN International Film Festival  
+                  </p>
+                  <p class="txt1">
+                    Badge Registration Open​​
+                  </p>
+                  <a href="/dist/accreditation.html" class="gobtn" target="_blank" tabindex="0"></a>
+                </div>
+              </div>
+              <div class="swiper-slide main-swiper-slide">
+                <div class="imgBox">
+                  <img src="/assets/imgs/main/bg.jpg" alt="Image 1">
+                </div>
+                <div class="visual_txtbox2">
+                  <p class="txt1">
+                    29th BUSAN
+                    <br>International Film Festival 
+                  </p>
+                  <p class="txt2">
+                    2-11 October 2024​​
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination "></div>
+          </div>
+          <div class="controlbox">
+            <a href=""  class="ccbtn5 " id="slider-prev5">
+              <span class="pre">
+                <i class="fa-solid fa-arrow-left"></i>
+              </span>
+            </a>
+            <a href=""  class="ccbtn5" id="slider-next5">
+              <span class="nex">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+         </div>
+ 
+          <div class="container-xl mnews">
+            <div class="row g-m">
+              <div class="main_news-1 main_news">
+                <div class="tit_wrap">
+                  <h3 class="main_sec_tit">NOTICE</h3>
+                </div>
+                <div class="box_bd">
+                  <div class="news_li">
+                    <div class="news_date n2">
+                      <p class="day">18
+                        2024.07
+                      </p>
+                    </div>
+                    <div class="bc_box n2">
+                      <p class="bc_tit">
+                        <a href="/dist/notice_detail.html">[BIFF Press Release] 2024 Asian Contents & Film Market Open for Registration!</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="news_li">
+                    <div class="news_date n2">
+                      <p class="day">01
+                        2024.07
+                      </p>
+                    </div>
+                    <div class="bc_box n2">
+                      <p class="bc_tit">
+                        <a href="/dist/notice_detail.html">[BIFF Press Release] 2024 Asia Contents Awards & Global OTT Awards to be Held!</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="news_li">
+                    <div class="news_date n2">
+                      <p class="day">27
+                        2024.06
+                      </p>
+                    </div>
+                    <div class="bc_box n2">
+                      <p class="bc_tit">
+                        <a href="/dist/notice_detail.html">[BIFF Press Release] 2024 Asian Cinema Fund (ACF) Announces 13 Recipients!</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main_news-2 main_news">
+                <div class="tit_wrap">
+                  <h3 class="main_sec_tit">BIFF NEWS</h3>
+                </div>
+                <div class="box_bd">
+                  <div class="news_li">
+                    <div class="bc_box">
+                      <p class="bc_tit">
+                        <a href="/dist/newsletter_detail.html">[BIFF 2023] Daily Newsletter: Day 9 (Oct 12)</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="news_li">
+                    <div class="bc_box">
+                      <p class="bc_tit">
+                        <a href="/dist/newsletter_detail.html">[BIFF 2023] Daily Newsletter: Day 8 (Oct 11)</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="news_li">
+                    <div class="bc_box">
+                      <p class="bc_tit">
+                        <a href="/dist/newsletter_detail.html">[BIFF 2023] Daily Newsletter: Day 7 (Oct 10)</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-xl spotlight">
+            <div class="tit_wrap">
+              <h3 class="main_sec_tit">BIFF Family</h3>
+              <div class="controlbox">
+                <a href="" id="slider-prev4" class="ccbtn2 slick-arrow">
+                  <span class="pre">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </span>
+                </a>
+                <a href="" id="slider-next4" class="ccbtn2 slick-arrow">
+                  <span class="nex">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="swiper spotlight-swiper">
+                <div class="swiper-wrapper spotlight-swiper-wrapper">
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service07.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">CHANEL X BIFF Asian Film Academy</span> <br>
+                      <span class="tit1">BAFA</span><br>
+                      <span class="tit2">Film education program for promising filmmakers who will lead Asian cinema
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service08.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tit1">Forum BIFF</span><br>
+                      <span class="tit2">As a socializing hub for filmmakers and professionals from all over the world, Forum BIFF will provide the audience with an opportunity to experience a wealth of cinematic intelligence.
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service09.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">BIFF Film Academy</span> <br>
+                      <span class="tit1">BFA</span><br>
+                      <span class="tit2">A program nurturing creative film manpower and providing continuous supports for them with universities in Busan.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service10.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tit1">Community BIFF</span><br>
+                      <span class="tit2">Community BIFF aims to be an open film festival where audiences, filmmakers, activists, academics, and local residents become agents of the festival.
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service11.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tit1">BIFF Everywhere</span><br>
+                      <span class="tit2">The audience can join the festival with ease and share rich experiences with their neighbors, such as the screening of popular films from domestic and international film festivals, meetings with guests, and attending performances by local artists.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service01.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">Asian Contents & Film Market</span> <br>
+                      <span class="tit1">ACFM</span><br>
+                      <span class="tit2">Asia’s esteemed content market, It is a comprehensive site of content business where transactions of original IPs ranging from film and audiovisual content, to books, webtoons, web novels, story treatments, and more, are accessible.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service02.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">Busan Story Market</span> <br>
+                      <span class="tit1">BSM</span><br>
+                      <span class="tit2">IP sales market where stories, the foundation for all content, are sold and purchased to be reproduced on various platforms.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service03.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">Asian Project Market</span> <br>
+                      <span class="tit1">APM</span><br>
+                      <span class="tit2">Asia’s first investment and co-production market, which introduces promising Asian feature film projects in the stages of planning, development, or production, to individuals related to the film industry.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service04.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">Asian Cinema Fund</span> <br>
+                      <span class="tit1">ACF</span><br>
+                      <span class="tit2">Film Fund for Asian Independent Feature Fiction/Documentary Film Projects 
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service05-1.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">Asia Contents Awards & Global OTT Awards</span> <br>
+                      <span class="tit1">ACA & G.OTT</span><br>
+                      <span class="tit2">Asia Contents Awards & Global OTT Awards (ACA & G.OTT) is an award ceremony to celebrate content creation industries from the world and to recognize the outstanding TV, OTT and online content of the year.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service06.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tit1">Platform BUSAN</span><br>
+                      <span class="tit2">A networking platform where emerging Asian independent filmmakers can share their field experiences to enlighten artistic philosophies and exchange field experiences
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service07.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">CHANEL X BIFF Asian Film Academy</span> <br>
+                      <span class="tit1">BAFA</span><br>
+                      <span class="tit2">Film education program for promising filmmakers who will lead Asian cinema
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service08.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tit1">Forum BIFF</span><br>
+                      <span class="tit2">As a socializing hub for filmmakers and professionals from all over the world, Forum BIFF will provide the audience with an opportunity to experience a wealth of cinematic intelligence.
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service09.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">BIFF Film Academy</span> <br>
+                      <span class="tit1">BFA</span><br>
+                      <span class="tit2">A program nurturing creative film manpower and providing continuous supports for them with universities in Busan.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service10.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tit1">Community BIFF</span><br>
+                      <span class="tit2">Community BIFF aims to be an open film festival where audiences, filmmakers, activists, academics, and local residents become agents of the festival.
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service11.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tit1">BIFF Everywhere</span><br>
+                      <span class="tit2">The audience can join the festival with ease and share rich experiences with their neighbors, such as the screening of popular films from domestic and international film festivals, meetings with guests, and attending performances by local artists.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service01.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">Asian Contents & Film Market</span> <br>
+                      <span class="tit1">ACFM</span><br>
+                      <span class="tit2">Asia’s esteemed content market, It is a comprehensive site of content business where transactions of original IPs ranging from film and audiovisual content, to books, webtoons, web novels, story treatments, and more, are accessible.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service02.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">Busan Story Market</span> <br>
+                      <span class="tit1">BSM</span><br>
+                      <span class="tit2">IP sales market where stories, the foundation for all content, are sold and purchased to be reproduced on various platforms.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service03.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">Asian Project Market</span> <br>
+                      <span class="tit1">APM</span><br>
+                      <span class="tit2">Asia’s first investment and co-production market, which introduces promising Asian feature film projects in the stages of planning, development, or production, to individuals related to the film industry.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service04.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">Asian Cinema Fund</span> <br>
+                      <span class="tit1">ACF</span><br>
+                      <span class="tit2">Film Fund for Asian Independent Feature Fiction/Documentary Film Projects 
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service05-1.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">Asia Contents Awards & Global OTT Awards</span> <br>
+                      <span class="tit1">ACA & G.OTT</span><br>
+                      <span class="tit2">Asia Contents Awards & Global OTT Awards (ACA & G.OTT) is an award ceremony to celebrate content creation industries from the world and to recognize the outstanding TV, OTT and online content of the year.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service06.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tit1">Platform BUSAN</span><br>
+                      <span class="tit2">A networking platform where emerging Asian independent filmmakers can share their field experiences to enlighten artistic philosophies and exchange field experiences
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service07.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">CHANEL X BIFF Asian Film Academy</span> <br>
+                      <span class="tit1">BAFA</span><br>
+                      <span class="tit2">Film education program for promising filmmakers who will lead Asian cinema
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service08.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tit1">Forum BIFF</span><br>
+                      <span class="tit2">As a socializing hub for filmmakers and professionals from all over the world, Forum BIFF will provide the audience with an opportunity to experience a wealth of cinematic intelligence.
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service09.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tits">BIFF Film Academy</span> <br>
+                      <span class="tit1">BFA</span><br>
+                      <span class="tit2">A program nurturing creative film manpower and providing continuous supports for them with universities in Busan.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service10.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tit1">Community BIFF</span><br>
+                      <span class="tit2">Community BIFF aims to be an open film festival where audiences, filmmakers, activists, academics, and local residents become agents of the festival.
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/img_service11.jpg" alt="">
+                    </div>
+                    <div class="txtbox">
+                      <span class="tit1">BIFF Everywhere</span><br>
+                      <span class="tit2">The audience can join the festival with ease and share rich experiences with their neighbors, such as the screening of popular films from domestic and international film festivals, meetings with guests, and attending performances by local artists.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-xl biff-story">
+            <div class="tit_wrap">
+              <h3 class="main_sec_tit">BIFF Story</h3>
+            </div>
+            <div class="biff-story-div">
+              <div class="loading">
+                <img src="/assets/imgs/main/loading_main.gif" alt="">
+              </div>
+              <div class="biff_story">
+                <div class="inner">
+                  <div class="story_wrap">
+                    <!-- left -->
+                    <div class="left">
+                      <div class="pr_list cursor-pointer">
+                        <div class="thumb">
+                          <img src="/assets/imgs/main/story.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                          <div class="subject">[BIFF 2023] ‘Inside the Yellow Cocoon Shell’ Review</div>
+                          <div class="writer hide">
+                            <span>
+                              <img src="/assets/imgs/main/story.jpg" alt="">
+                            </span>
+                          </div>
+                          <div class="desc">
+                            A Spiritual Wander Through Rural Vietnam Makes For a Transfixing Debut
+                            Thien An Pham's supremely accomplished first feature may seem narratively slender for its three-hour runtime, but its layered abundance of sensory detail casts an unshakable spell.
+                           &nbsp;
+                            JK Film and Potocol
+                            All of life, including death, is in the lengthy, unbroken shot that opens Thien An Pham‘s bewitching debut feature “Inside the Yellow Cocoon Shell.” We begin on the sidelines of a local soccer match in Saigon’s city center, observing the play from a cool distance before following a shuffling mascot, dressed in a wolf suit, to the adjoining bar. There, crowds watch a 2018 World Cup fixture while a group of young men, turned from the TV, drink and discuss matters of faith, existence and ennui. Thien (Le Phong Vu) is quiet and morose, only half-invested in a conversation already beset with distractions: the sales pitch of a bubbly beer rep, the burst of a sudden summer thunderstorm, a metallic screech and grim thump as the camera again drifts serenely over to reveal the aftermath of a fatal motorcycle crash. In the ensuing rhubarb of bystander concern, Thien stays put.
+                            The absence of cuts in this immaculated choreographed long take feels not merely like technical show-offery, but a reflection of Thien’s own detached presence in a world passing him by. It’s only later, in the middle of an erotic massage at a gentlemen’s spa, that he learns the casualty of the crash was his sister-in-law Hanh; its survivor, his five-year-old nephew Dao (Nguyen Thinh). It’s an acidly comic way into tragedy, cuing a wandering spiritual inquiry that will take in many such dazzling shifts in tone and perspective along the way, all wrangled with preternatural confidence and formal invention by its young director.
+                            
+                            Fully delivering on the promise of Pham’s well-traveled shorts — one of which, 2019 Cannes Directors’ Fortnight winner “Stay Awake, Be Ready,” was the root for this feature — this is challenging but seductive art cinema that invites comparisons to such titans as Apichatpong Weerasethakul, Tsai Ming-liang and even Theo Angelopoulos, without feeling derivative of any. A standout in this year’s Fortnight program and among the most auspicious debuts to pop at Cannes of late, “Cocoon Shell” should attract attention from specialist distributors undaunted by the film’s esoteric edges and languorous but rewarding three-hour runtime.
+                            
+                            At the film’s heart is a warmly affecting story of loss and grief — for the dead, but also for alternate lives and opportunities missed — albeit one that reaches its emotional epiphanies in subtle, circuitous ways. In the absence of Hanh, the ill-equipped Thien becomes Dao’s temporary guardian; Tam, Dao’s dad and Thien’s brother, has been AWOL for years. Together, man and boy leave the city, accompanying Hanh’s corpse to their remote home village, where the rituals of burial and mourning in the local Christian community are observed in rapt, reverent detail.
+                            
+                           
+                            Thien, not a believer himself, has few words of assurance or consolation for his confused young nephew, though he’s not unreceptive to the comfort others find in faith, or the marvels of the living world. He adopts and nurtures an abandoned baby bird, before it, too, perishes and must be buried; he reunites with an old flame, now a nun at the convent school he wants Dao to attend, but they’re separated by differing ideas of the divine. Pham repeatedly thwarts convenient metaphors for redemption and renewal, as Thien must instead embark on a more complicated, irregular search through the wilderness — ostensibly for Tam, but essentially for his own soul, for an elusive sense of place and purpose.
+                            
+                            There is much obvious beauty in this lush, rural Vietnamese hinterland, as DP Dinh Duy Hung’s meticulous, intricately staggered compositions paint in the rich, wet greens of the surrounding forest, the mineral blues of weather-heavy skies and the interrupting gauze of mist over everything. But “Inside the Yellow Cocoon Shell” (the title of which, too, hints at ideas of natural and spiritual transition that the film resists making literal) is never dully picturesque: No landscape is shown here without a precise sense of how characters view and respond to it.
+                           
+                           
+                            Extraordinarily layered, fevered sound design, meanwhile, ensures that even the film’s most notionally quiet, pensive scenes feel bustlingly inhabited across the ecosystem. Much of the dialogue is woven through competing input from livestock, birdsong, wind, dripping water and radio chatter. These tangible sources ground us even as the film’s sense of time lapses and collapses, as past and present, waking and dreaming, earthly and ethereal states begin to slip casually into one another, and Thien’s quest circles futilely before arriving at a kind of grace anyway. “I cannot exist simultaneously in the light and in the dark,” Thien says at one point; in offering a splintered, elastic conception of spiritual identity, outside the rules of religious doctrine, Pham’s exquisite film suggests otherwise.
+                           
+                           
+                           
+                          </div>
+                          <a class="btn_more">Selection Review</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- right -->
+                    <div class="right">
+                      <div class="story_list">
+                        <div class="box">
+                          <a href="">
+                            <div class="thumb">
+                              <img src="/assets/imgs/main/story1.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                              <strong class="subject">[BIFF 2023] ‘The Shadowless Tower’ Review</strong>
+                              <span class="cate">Selection Review</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="box">
+                          <a href="">
+                            <div class="thumb">
+                              <img src="/assets/imgs/main/story2.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                              <strong class="subject">[BIFF2023] ‘Moro’: Busan Review</strong>
+                              <span class="cate">Selection Review</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="box">
+                          <a href="">
+                            <div class="thumb">
+                              <img src="/assets/imgs/main/story4.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                              <strong class="subject">Busan 2023 Review: POOR THINGS, a Ghoulish, Glorious Fairytale o</strong>
+                              <span class="cate">Selection Review</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="box">
+                          <a href="">
+                            <div class="thumb">
+                              <img src="/assets/imgs/main/story5.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                              <strong class="subject">[BIFF2023] ‘Borrowed Time’: Busan Review</strong>
+                              <span class="cate">Selection Review</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="box">
+                          <a href="">
+                            <div class="thumb">
+                              <img src="/assets/imgs/main/story3.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                              <strong class="subject">Busan 2023 Review: ALI TOPAN, Young Lovers On the Run in Spirite</strong>
+                              <span class="cate">Selection Review</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-xl mmedia">
+            <div class="tit_wrap">
+              <h3 class="main_sec_tit">BIFF VIDEOS</h3>
+              <div class="controlbox mt-4">
+                <span class="pggo">
+                  <a href="">BIFF Videos Go</a>
+                </span>
+                <a href=""> &nbsp; </a>
+                <a href="" id="slider-prev3" class="ccbtn2 slick-arrow">
+                  <span class="pre">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </span>
+                </a>
+                <a href="" id="slider-next3" class="ccbtn2 slick-arrow">
+                  <span class="nex">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="swiper mmedia-swiper">
+                <div class="swiper-wrapper mmedia-swiper-wrapper">
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/1.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tits">CHANEL X BIFF Asian Film Academy</span> <br>
+                      <span class="tit1">BAFA</span><br>
+                      <span class="tit2">Film education program for promising filmmakers who will lead Asian cinema
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/2.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tit1">Forum BIFF</span><br>
+                      <span class="tit2">As a socializing hub for filmmakers and professionals from all over the world, Forum BIFF will provide the audience with an opportunity to experience a wealth of cinematic intelligence.
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/3.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tits">BIFF Film Academy</span> <br>
+                      <span class="tit1">BFA</span><br>
+                      <span class="tit2">A program nurturing creative film manpower and providing continuous supports for them with universities in Busan.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/4.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tit1">Community BIFF</span><br>
+                      <span class="tit2">Community BIFF aims to be an open film festival where audiences, filmmakers, activists, academics, and local residents become agents of the festival.
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/5.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tit1">BIFF Everywhere</span><br>
+                      <span class="tit2">The audience can join the festival with ease and share rich experiences with their neighbors, such as the screening of popular films from domestic and international film festivals, meetings with guests, and attending performances by local artists.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/6.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tits">Asian Contents & Film Market</span> <br>
+                      <span class="tit1">ACFM</span><br>
+                      <span class="tit2">Asia’s esteemed content market, It is a comprehensive site of content business where transactions of original IPs ranging from film and audiovisual content, to books, webtoons, web novels, story treatments, and more, are accessible.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/7.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tits">Asian Contents & Film Market</span> <br>
+                      <span class="tit1">ACFM</span><br>
+                      <span class="tit2">Asia’s esteemed content market, It is a comprehensive site of content business where transactions of original IPs ranging from film and audiovisual content, to books, webtoons, web novels, story treatments, and more, are accessible.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/8.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tits">Asian Contents & Film Market</span> <br>
+                      <span class="tit1">ACFM</span><br>
+                      <span class="tit2">Asia’s esteemed content market, It is a comprehensive site of content business where transactions of original IPs ranging from film and audiovisual content, to books, webtoons, web novels, story treatments, and more, are accessible.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/9.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tits">Asian Contents & Film Market</span> <br>
+                      <span class="tit1">ACFM</span><br>
+                      <span class="tit2">Asia’s esteemed content market, It is a comprehensive site of content business where transactions of original IPs ranging from film and audiovisual content, to books, webtoons, web novels, story treatments, and more, are accessible.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/10.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tits">Asian Contents & Film Market</span> <br>
+                      <span class="tit1">ACFM</span><br>
+                      <span class="tit2">Asia’s esteemed content market, It is a comprehensive site of content business where transactions of original IPs ranging from film and audiovisual content, to books, webtoons, web novels, story treatments, and more, are accessible.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/1.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tits">CHANEL X BIFF Asian Film Academy</span> <br>
+                      <span class="tit1">BAFA</span><br>
+                      <span class="tit2">Film education program for promising filmmakers who will lead Asian cinema
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/2.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tit1">Forum BIFF</span><br>
+                      <span class="tit2">As a socializing hub for filmmakers and professionals from all over the world, Forum BIFF will provide the audience with an opportunity to experience a wealth of cinematic intelligence.
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/3.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tits">BIFF Film Academy</span> <br>
+                      <span class="tit1">BFA</span><br>
+                      <span class="tit2">A program nurturing creative film manpower and providing continuous supports for them with universities in Busan.
+                      </span>
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible">
+                    <div class="img_box">
+                      <img src="/assets/imgs/main/mmedia/4.jpg" alt="">
+                    </div>
+                    <div class="txtbox hide">
+                      <span class="tit1">Community BIFF</span><br>
+                      <span class="tit2">Community BIFF aims to be an open film festival where audiences, filmmakers, activists, academics, and local residents become agents of the festival.
+                      <p class="desc tit3 hide"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="poster">
+              <div class="container-xl poster_cont">
+                <div class="tit_wrap">
+                  <h3 class="main_sec_tit">BIFF ARCHIVE</h3> 
+                  <p class="desc">BIFF History &amp; Program Archive</p>
+                  <div class="controlbox mt-4">
+                    <a href="" class="pggo">
+                      <span>Advanced Search</span>
+                    </a>
+                    <a href="" id="slider-prev2" class="ccbtn3 slick-arrow">
+                      <span class="pre">
+                        <i class="fa-solid fa-arrow-left"></i>
+                      </span>
+                    </a>
+                    <a href="" id="slider-next2" class="ccbtn3 slick-arrow">
+                      <span class="nex">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="swiper poster-swiper">
+                    <div class="swiper-wrapper poster-swiper-wrapper">
+                      <div class="swiper-slide swiper-slide-visible">
+                        <div class="img_box">
+                          <img src="/assets/imgs/main/poster/7th_poster.jpg" alt="">
+                        </div>
+                        <dl>
+                          <dt>24th</dt>
+                          <dd>2019</dd>
+                        </dl>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible">
+                        <div class="img_box">
+                          <img src="/assets/imgs/main/poster/6th_poster.jpg" alt="">
+                        </div>
+                        <dl>
+                          <dt>6th</dt>
+                          <dd>2001</dd>
+                        </dl>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible">
+                        <div class="img_box">
+                          <img src="/assets/imgs/main/poster/5th_poster.jpg" alt="">
+                        </div>
+                        <dl>
+                          <dt>5th</dt>
+                          <dd>2000</dd>
+                        </dl>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible">
+                        <div class="img_box">
+                          <img src="/assets/imgs/main/poster/4th_poster.jpg" alt="">
+                        </div>
+                        <dl>
+                          <dt>4th</dt>
+                          <dd>1999</dd>
+                        </dl>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible">
+                        <div class="img_box">
+                          <img src="/assets/imgs/main/poster/3th_poster.jpg" alt="">
+                        </div>
+                        <dl>
+                          <dt>3th</dt>
+                          <dd>1998</dd>
+                        </dl>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible">
+                        <div class="img_box">
+                          <img src="/assets/imgs/main/poster/2th_poster.jpg" alt="">
+                        </div>
+                        <dl>
+                          <dt>2th</dt>
+                          <dd>1997</dd>
+                        </dl>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible">
+                        <div class="img_box">
+                          <img src="/assets/imgs/main/poster/1th_poster.jpg" alt="">
+                        </div>
+                        <dl>
+                          <dt>1th</dt>
+                          <dd>1996</dd>
+                        </dl>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible">
+                        <div class="img_box">
+                          <img src="/assets/imgs/main/poster/25th_poster.jpg" alt="">
+                        </div>
+                        <dl>
+                          <dt>28th</dt>
+                          <dd>2023</dd>
+                        </dl>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible">
+                        <div class="img_box">
+                          <img src="/assets/imgs/main/poster/26th_poster.jpg" alt="">
+                        </div>
+                        <dl>
+                          <dt>27th</dt>
+                          <dd>2022</dd>
+                        </dl>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible">
+                        <div class="img_box">
+                          <img src="/assets/imgs/main/poster/27th_poster.jpg" alt="">
+                        </div>
+                        <dl>
+                          <dt>26th</dt>
+                          <dd>2021</dd>
+                        </dl>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible">
+                        <div class="img_box">
+                          <img src="/assets/imgs/main/poster/28th_poster.jpg" alt="">
+                        </div>
+                        <dl>
+                          <dt>25th</dt>
+                          <dd>2020</dd>
+                        </dl>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible">
+                        <div class="img_box">
+                          <img src="/assets/imgs/main/poster/1th_poster.jpg" alt="">
+                        </div>
+                        <dl>
+                          <dt>1th</dt>
+                          <dd>1996</dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_sns container-xl">
+            <div class="main_sns_cont">
+              <div class="biff_sns">
+                <div class="m_sns">
+                  <div class="section_tit">
+                    <h3>BIFF SNS</h3>
+                    <p>Follow us on SNS!</p>
+                  </div>
+                </div>
+                <div class="m_sns">
+                  <ul class="snslink">
+                    <li>
+                      <a href="https://www.facebook.com/busanfilmfest" target="_blank" title="페이스북 바로가기"></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/busanfilmfest" target="_blank" title="트위터 바로가기"></a>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/busanfilmfest" target="_blank" title="인스타그램 바로가기">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/channel/UCJB3MxLQsak5tT-Yvod2alA" target="_blank" title="유튜브 바로가기">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="newsletter">
+                <div class="m_newsletter">
+                  <div class="section_tit">
+                    <h3>BIFF NEWS LETTER</h3>
+                    <p>For latest BIFF news</p>
+                  </div>
+                </div>
+                <div class="newsletter_btn">
+                  <a class="btn" href="https://page.stibee.com/subscriptions/129875" target="_blank">Subscribe</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_sponsor">
+            <div class="container container-s">
+              <h3 class="tit">관련 기관 사이트</h3>
+              <ul class="sitebanner">
+                <li><a href="http://www.busan.go.kr" target="blank" title="새창열기"><img src="/assets/imgs/main/main_banner01.svg" alt="부산광역시"></a></li>
+                <li><a href="http://www.mcst.go.kr" target="blank" title="새창열기"><img src="/assets/imgs/main/main_banner02.svg" alt="문화체육관광부"></a></li>
+                <li><a href="http://www.kofic.or.kr" target="blank" title="새창열기"><img src="/assets/imgs/main/main_banner03.png" alt="영화진흥위원회"></a></li>
+                <li><a href="http://www.dureraum.org" target="blank" title="새창열기"><img src="/assets/imgs/main/main_banner04.png" alt="영화의전당"></a></li>
+              </ul>
+            </div>
+          </div>
+        </main>
+       </div>
+       <footer class="footer">
+    <div class="container foot_div">
+        <div class="row footer-top">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <div class="ft_newsletter">
+                    <div class="ft_sns">
+                        <ul class="social_list list-inline">
+                            <li>
+                                <a class="link_facebook" href="" title="페이스북 바로가기" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 24 24">
+                                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link_twitter" href="" title="트위터 바로가기" target="_blank">
+                                    <svg width="30" height="34" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.3987 9.73893L21.78 0H19.7939L12.5164 8.45618L6.70399 0H0L8.78958 12.7872L0 23H1.9862L9.67135 14.07L15.8097 23H22.5137L13.3987 9.73893ZM10.6784 12.8999L9.78779 11.6266L2.70185 1.49463H5.75254L11.471 9.67143L12.3615 10.9448L19.7948 21.5733H16.7441L10.6784 12.8999Z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="" title="인스타그램 바로가기" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 24 24">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link_youtube" href="" title="유튜브 바로가기" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 24 24">
+                                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_btm">
+            <div class="col-12 col-md-9">
+                <address>
+                    <span class="add">
+                        <span>Busan Office</span>
+                        3rd Floor, BIFF HILL, Busan Cinema Center, 120, Suyeonggangbyeon-daero, Haeundae-gu, Busan 48058, Korea 
+                    </span>
+                    <span class="add">
+                        <span>Seoul Office</span>
+                        #1601, GARDEN TOWER, 84, Yulgok-ro, Jongno-gu, Seoul 03131, Korea 
+                    </span>
+                </address>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="copyright">
+                    <div class="en">© Busan International Film Festival  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </body>
+</html>

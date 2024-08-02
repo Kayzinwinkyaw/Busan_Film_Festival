@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project Name</title>
+
+<!-- CSS -->
+<link
+  href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="../assets/css/reset.css" />
+<link rel="stylesheet" href="../assets/css/common.css" />
+<link rel="stylesheet" href="../assets/css/fonts.css" />
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/sub.css" />
+
+<link rel="stylesheet" href="../assets/css/media.css" />
+<link rel="stylesheet" href="../assets/css/media1.css" />
+<link rel="stylesheet" href="../assets/css/media2.css">
+<link rel="stylesheet" href="../assets/css/media3.css">
+
+<!-- AOS animation library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<!-- Jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<!-- AOS animation library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Common script -->
+<script src="../assets/js/common.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <header class="hd main fixed-top" id="hd">
+  <div class="container-xxl header_container">
+    <div class="header_top">
+      <div class="other_home">
+          <ul>
+              <li class="on">
+                  <a href="https://www.biff.kr/eng/">BIFF</a>
+              </li>
+              <li>
+                  <a href="https://www.acfm.kr/eng/" target="_blank">ACFM
+                      <span>
+                          <img src="/assets/imgs/common/other_home_acfm.png" alt="">
+                      </span>
+                  </a>
+                  <ul>
+                      <li>
+                          <a href="https://apm.biff.kr/eng/" target="_blank">APM</a>
+                      </li>
+                      <li>
+                          <a href="https://acf.biff.kr/eng/" target="_blank">ACF</a>
+                      </li>
+                      <li>
+                          <a href="https://www.globalottawards.org/eng/" target="_blank">ACA</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="https://bafa.biff.kr/eng/" target="_blank">BAFA</a>
+              </li>
+              <li>
+                  <a href="https://community.biff.kr/kor/" target="_blank">Community BIFF</a>
+              </li>
+              <li>
+                  <a href="https://forum.biff.kr/eng/" target="_blank">Forum BIFF</a>
+              </li>
+              <li>
+                  <a href="https://press.biff.kr/eng/" target="_blank">PRESS</a>
+              </li>
+              <li>
+                  <a href="" target="_blank">Archive</a>
+              </li>
+          </ul>
+      </div>
+      <div class="util">
+          <ul class="util_list">
+              <li>
+                  <a href="">KO</a>
+              </li>
+              <li>
+                  <a href="">
+                      <span>
+                          <img src="/assets/imgs/common/icon_search.png" alt="">
+                      </span>
+                      SEARCH
+                  </a>
+              </li>
+          </ul>
+      </div>
+    </div>
+    <div class="main_nav">
+        <div class="main_nav_left">
+            <h1 class="logo">
+                <a title="BIFF 홈" href="/dist/main.html">
+                    <img src="/assets/imgs/common/top_logo.svg" alt="부산국제영화제">
+                </a>
+            </h1>
+        </div>
+        <!-- main_nav_center -->
+         <div class="main_nav_center">
+            <div id="gnb" class="gnb">
+                <h2 class="screen_out">Main Menu</h2>
+                <nav>
+                    <ul class="list-inline depth1" id="gnbmenuids">
+                        <li class="active2">
+                            <a href="/dist/introduction.html">BIFF</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list1">
+                                    <li class="menu1_1">
+                                        <a href="/dist/introduction.html">Introduction</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_2">
+                                        <a href="/dist/view.html">Overview</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_3">
+                                        <a href="/dist/program_section.html">Program Sections</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_4">
+                                        <a href="/dist/awards.html">Awards</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_5">
+                                        <a href="/dist/programmers.html">Programmers</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_6">
+                                        <a href="/dist/team.html">The Team</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_7">
+                                        <a href="/dist/sponsorship.html">Sponsorship</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/submission_guide.html" target="_top">Submission</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list2">
+                                    <li class="menu2_1">
+                                        <a href="/dist/submission_guide.html" target="_top">Submission Guide</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_2">
+                                        <a href="/dist/official_selection.html" target="_top">Official Selection</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_3">
+                                        <a href="/dist/film_academy.html" target="_top">CHANEL X BIFF Asian Film Academy</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_4">
+                                        <a href="/dist/project_market.html" target="_top">Asian Project Market</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_5">
+                                        <a href="/dist/cinema_fund.html" target="_top">Asian Cinema Fund</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_6">
+                                        <a href="/dist/platform_busan.html" target="_top">Platform BUSAN</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/accreditation.html" target="_top">Accreditation</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list3">
+                                    <li class="menu3_1">
+                                        <a href="/dist/accreditation.html" target="_top">Accreditation</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_2">
+                                        <a href="/dist/festival.html" target="_top">Festival </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_3">
+                                        <a href="/dist/cinephile.html" target="_top">Cinephile </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_4">
+                                        <a href="/dist/press.html" target="_top">Press </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_5">
+                                        <a href="/dist/market.html" target="_top">Market </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_6">
+                                        <a href="/dist/accreditation_faq.html" target="_top">FAQ</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/newsletter.html" target="_top">BIFF Story</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list4">
+                                    <li class="menu4_1">
+                                        <a href="/dist/newsletter.html" target="_top">Newsletter</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu4_2">
+                                        <a href="/dist/videos.html" target="_top">Videos</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu4_3">
+                                        <a href="/dist/selection_review.html" target="_top">Selection Review</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/archive.html" target="_top">Archive</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list5">
+                                    <li class="menu5_1">
+                                        <a href="/dist/archive.html" target="_top">Archive Search</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu5_2">
+                                        <a href="/dist/history.html" target="_top">History</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/notice.html" target="_top">Community</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list6">
+                                    <li class="menu6_1">
+                                        <a href="/dist/notice.html" target="_top">Notice</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu6_2">
+                                        <a href="/dist/sns_hub.html" target="_top">SNS Hub</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+         </div>
+         <!-- main_nav_right -->
+         <div class="main_nav_right">
+            <h1 class="sponsor_logo">
+                <a href="" target="_blank">
+                    <img src="/assets/imgs/common/top_sponsor_logo_1.png" alt="부산은행">
+                </a>
+                <a href="" target="_blank">
+                    <img src="/assets/imgs/common/top_sponsor_logo_2.png" alt="제네시스">
+                </a>
+                <a href="" target="_blank">
+                    <img src="/assets/imgs/common/top_sponsor_logo_3.png" alt="샤넬">
+                </a>
+            </h1>
+         </div>
+    </div>
+  </div>
+  </header>
+    <div id="snb" class="snb">
+      <div class="container-xxl">
+        <ul class="list-inline snb_ul" id="snbul1">
+          <li class="">
+            <a href="/dist/submission_guide.html" target="_top"
+              >Submission Guide</a
+            >
+          </li>
+          <li class="current">
+            <a href="/dist/official_selection.html" target="_top"
+              >Official Selection</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/film_academy.html" target="_top"
+              >CHANEL X BIFF Asian Film Academy</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/project_market.html" target="_top"
+              >Asian Project Market</a
+            >
+          </li>
+          <li class="">
+            <a href="/dist/cinema_fund.html" target="_top">Asian Cinema Fund</a>
+          </li>
+          <li class="">
+            <a href="/dist/platform_busan.html" target="_top">Platform BUSAN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container container-sm">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">Official Selection</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container-m">
+        <div class="container-xl">
+          <div class="d3tab_basic">
+            <ul id="depth3" class="depth3_ul">
+              <li class="depth3_li on_1_0">
+                <a
+                  href="/dist/official_selection.html"
+                  target="_top"
+                  >Submission Rules &amp; Regulations</a
+                >
+              </li>
+              <li class="depth3_li on on_1_1">
+                <a
+                  href="/dist/submit_page.html"
+                  target="_top"
+                  >Online Submission Form</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page submit">
+        <div class="container-sm">
+          <div class="btn_badge_cont">
+            <div class="txt-center mt20">
+              <a
+                class="btn_badge"
+                href=""
+                >Short Films<br />(Less than 60 minutes)</a
+              >
+              <a
+                class="btn_badge"
+                href=""
+                >Feature Films<br />(60 minutes or more)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+    <div class="container foot_div">
+        <div class="row footer-top">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <div class="ft_newsletter">
+                    <div class="ft_sns">
+                        <ul class="social_list list-inline">
+                            <li>
+                                <a class="link_facebook" href="" title="페이스북 바로가기" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 24 24">
+                                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link_twitter" href="" title="트위터 바로가기" target="_blank">
+                                    <svg width="30" height="34" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.3987 9.73893L21.78 0H19.7939L12.5164 8.45618L6.70399 0H0L8.78958 12.7872L0 23H1.9862L9.67135 14.07L15.8097 23H22.5137L13.3987 9.73893ZM10.6784 12.8999L9.78779 11.6266L2.70185 1.49463H5.75254L11.471 9.67143L12.3615 10.9448L19.7948 21.5733H16.7441L10.6784 12.8999Z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="" title="인스타그램 바로가기" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 24 24">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link_youtube" href="" title="유튜브 바로가기" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 24 24">
+                                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_btm">
+            <div class="col-12 col-md-9">
+                <address>
+                    <span class="add">
+                        <span>Busan Office</span>
+                        3rd Floor, BIFF HILL, Busan Cinema Center, 120, Suyeonggangbyeon-daero, Haeundae-gu, Busan 48058, Korea 
+                    </span>
+                    <span class="add">
+                        <span>Seoul Office</span>
+                        #1601, GARDEN TOWER, 84, Yulgok-ro, Jongno-gu, Seoul 03131, Korea 
+                    </span>
+                </address>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="copyright">
+                    <div class="en">© Busan International Film Festival  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  </body>
+</html>

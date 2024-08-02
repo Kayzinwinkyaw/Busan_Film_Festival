@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project Name</title>
+
+<!-- CSS -->
+<link
+  href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="../assets/css/reset.css" />
+<link rel="stylesheet" href="../assets/css/common.css" />
+<link rel="stylesheet" href="../assets/css/fonts.css" />
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/sub.css" />
+
+<link rel="stylesheet" href="../assets/css/media.css" />
+<link rel="stylesheet" href="../assets/css/media1.css" />
+<link rel="stylesheet" href="../assets/css/media2.css">
+<link rel="stylesheet" href="../assets/css/media3.css">
+
+<!-- AOS animation library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<!-- Jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<!-- AOS animation library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Common script -->
+<script src="../assets/js/common.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <header class="hd main fixed-top" id="hd">
+  <div class="container-xxl header_container">
+    <div class="header_top">
+      <div class="other_home">
+          <ul>
+              <li class="on">
+                  <a href="https://www.biff.kr/eng/">BIFF</a>
+              </li>
+              <li>
+                  <a href="https://www.acfm.kr/eng/" target="_blank">ACFM
+                      <span>
+                          <img src="/assets/imgs/common/other_home_acfm.png" alt="">
+                      </span>
+                  </a>
+                  <ul>
+                      <li>
+                          <a href="https://apm.biff.kr/eng/" target="_blank">APM</a>
+                      </li>
+                      <li>
+                          <a href="https://acf.biff.kr/eng/" target="_blank">ACF</a>
+                      </li>
+                      <li>
+                          <a href="https://www.globalottawards.org/eng/" target="_blank">ACA</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="https://bafa.biff.kr/eng/" target="_blank">BAFA</a>
+              </li>
+              <li>
+                  <a href="https://community.biff.kr/kor/" target="_blank">Community BIFF</a>
+              </li>
+              <li>
+                  <a href="https://forum.biff.kr/eng/" target="_blank">Forum BIFF</a>
+              </li>
+              <li>
+                  <a href="https://press.biff.kr/eng/" target="_blank">PRESS</a>
+              </li>
+              <li>
+                  <a href="" target="_blank">Archive</a>
+              </li>
+          </ul>
+      </div>
+      <div class="util">
+          <ul class="util_list">
+              <li>
+                  <a href="">KO</a>
+              </li>
+              <li>
+                  <a href="">
+                      <span>
+                          <img src="/assets/imgs/common/icon_search.png" alt="">
+                      </span>
+                      SEARCH
+                  </a>
+              </li>
+          </ul>
+      </div>
+    </div>
+    <div class="main_nav">
+        <div class="main_nav_left">
+            <h1 class="logo">
+                <a title="BIFF 홈" href="/dist/main.html">
+                    <img src="/assets/imgs/common/top_logo.svg" alt="부산국제영화제">
+                </a>
+            </h1>
+        </div>
+        <!-- main_nav_center -->
+         <div class="main_nav_center">
+            <div id="gnb" class="gnb">
+                <h2 class="screen_out">Main Menu</h2>
+                <nav>
+                    <ul class="list-inline depth1" id="gnbmenuids">
+                        <li class="active2">
+                            <a href="/dist/introduction.html">BIFF</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list1">
+                                    <li class="menu1_1">
+                                        <a href="/dist/introduction.html">Introduction</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_2">
+                                        <a href="/dist/view.html">Overview</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_3">
+                                        <a href="/dist/program_section.html">Program Sections</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_4">
+                                        <a href="/dist/awards.html">Awards</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_5">
+                                        <a href="/dist/programmers.html">Programmers</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_6">
+                                        <a href="/dist/team.html">The Team</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_7">
+                                        <a href="/dist/sponsorship.html">Sponsorship</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/submission_guide.html" target="_top">Submission</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list2">
+                                    <li class="menu2_1">
+                                        <a href="/dist/submission_guide.html" target="_top">Submission Guide</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_2">
+                                        <a href="/dist/official_selection.html" target="_top">Official Selection</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_3">
+                                        <a href="/dist/film_academy.html" target="_top">CHANEL X BIFF Asian Film Academy</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_4">
+                                        <a href="/dist/project_market.html" target="_top">Asian Project Market</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_5">
+                                        <a href="/dist/cinema_fund.html" target="_top">Asian Cinema Fund</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_6">
+                                        <a href="/dist/platform_busan.html" target="_top">Platform BUSAN</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/accreditation.html" target="_top">Accreditation</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list3">
+                                    <li class="menu3_1">
+                                        <a href="/dist/accreditation.html" target="_top">Accreditation</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_2">
+                                        <a href="/dist/festival.html" target="_top">Festival </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_3">
+                                        <a href="/dist/cinephile.html" target="_top">Cinephile </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_4">
+                                        <a href="/dist/press.html" target="_top">Press </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_5">
+                                        <a href="/dist/market.html" target="_top">Market </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_6">
+                                        <a href="/dist/accreditation_faq.html" target="_top">FAQ</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/newsletter.html" target="_top">BIFF Story</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list4">
+                                    <li class="menu4_1">
+                                        <a href="/dist/newsletter.html" target="_top">Newsletter</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu4_2">
+                                        <a href="/dist/videos.html" target="_top">Videos</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu4_3">
+                                        <a href="/dist/selection_review.html" target="_top">Selection Review</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/archive.html" target="_top">Archive</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list5">
+                                    <li class="menu5_1">
+                                        <a href="/dist/archive.html" target="_top">Archive Search</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu5_2">
+                                        <a href="/dist/history.html" target="_top">History</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/notice.html" target="_top">Community</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list6">
+                                    <li class="menu6_1">
+                                        <a href="/dist/notice.html" target="_top">Notice</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu6_2">
+                                        <a href="/dist/sns_hub.html" target="_top">SNS Hub</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+         </div>
+         <!-- main_nav_right -->
+         <div class="main_nav_right">
+            <h1 class="sponsor_logo">
+                <a href="" target="_blank">
+                    <img src="/assets/imgs/common/top_sponsor_logo_1.png" alt="부산은행">
+                </a>
+                <a href="" target="_blank">
+                    <img src="/assets/imgs/common/top_sponsor_logo_2.png" alt="제네시스">
+                </a>
+                <a href="" target="_blank">
+                    <img src="/assets/imgs/common/top_sponsor_logo_3.png" alt="샤넬">
+                </a>
+            </h1>
+         </div>
+    </div>
+  </div>
+  </header>
+    
+    <div class="container container-sm">
+      <div class="page selection_review_detail">
+        <div class="container-sm" style="margin-bottom: 0px"></div>
+        <div class="wz_view">
+          <div
+            class="wz_top"
+            style="background-image: url('/assets/imgs/main/story.jpg')"
+          >
+            <div class="container-xl">
+              <div class="inner">
+                <div class="txtbox">
+                  <p class="wz_tit en txt-secondary hide" style="color: #fff">
+                    BIFF SALON
+                  </p>
+                  <h2 class="tit">
+                    <span style=""
+                      >[BIFF 2023] ‘Inside the Yellow Cocoon Shell’ Review</span
+                    >
+                  </h2>
+                  <div class="name desc-l">
+                    <span class="en-serif italic">By</span> Variety - Guy Lodge
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wz_bd">
+            <div class="container-sm">
+              <div class="contents">
+                <!-- html 내용시작  -->
+
+                <p
+                  style="
+                    text-size-adjust: 100%;
+                    box-sizing: border-box;
+                    border: 0px;
+                    margin-bottom: 28px;
+                    line-height: 1.602rem;
+                    font-size: 1rem;
+                  "
+                >
+                  <span style="font-size: 18pt">
+                    A Spiritual Wander Through Rural Vietnam Makes For a
+                    Transfixing Debut
+                  </span>
+                </p>
+
+                <p
+                  style="
+                    text-size-adjust: 100%;
+                    box-sizing: border-box;
+                    border: 0px;
+                    margin-bottom: 28px;
+                    line-height: 1.602rem;
+                    font-size: 1rem;
+                  "
+                >
+                  <span style="font-size: 12pt">
+                    Thien An Pham's supremely accomplished first feature may
+                    seem narratively slender for its three-hour runtime, but its
+                    layered abundance of sensory detail casts an unshakable
+                    spell.
+                  </span>
+                </p>
+
+                <p
+                  class="o-custom-paragraph // lrv-u-font-size-14 lrv-u-font-family-secondary u-font-size-16@tablet u-line-height-small@tablet lrv-u-margin-tb-050"
+                  style="
+                    box-sizing: border-box;
+                    border-width: 0px;
+                    border-style: solid;
+                    font-family: var(
+                      --font-family-secondary,
+                      Arial,
+                      sans-serif
+                    );
+                    font-size: 0.875rem;
+                    margin-top: var(--spacing-050, 0.5rem);
+                    margin-bottom: var(--spacing-050, 0.5rem);
+                  "
+                >
+                  &nbsp;
+                </p>
+                <div
+                  class="article-header__feature // u-margin-lr-n050@mobile-max"
+                  style="
+                    box-sizing: border-box;
+                    border-width: 0px;
+                    border-style: solid;
+                    margin-left: -0.5rem;
+                    margin-right: -0.5rem;
+                  "
+                >
+                  <figure
+                    class="o-figure lrv-u-font-family-secondary u-color-brand-secondary-50 lrv-u-border-b-1 u-border-color-brand-secondary-40 u-margin-b-225 u-margin-b-150@mobile-max lrv-u-max-width-100p"
+                    style="
+                      box-sizing: border-box;
+                      border-width: 0px 0px 1px;
+                      border-style: solid;
+                      margin: 0px 0px 2.25rem;
+                      font-family: var(
+                        --font-family-secondary,
+                        Arial,
+                        sans-serif
+                      );
+                      max-width: 100%;
+                      border-color: rgb(196, 202, 206);
+                      color: var(--color-brand-secondary-50);
+                    "
+                  >
+                    <div
+                      class="c-lazy-image"
+                      style="
+                        box-sizing: border-box;
+                        border-width: 0px;
+                        border-style: solid;
+                      "
+                    >
+                      <div
+                        class="lrv-a-crop-16x9"
+                        style="
+                          box-sizing: border-box;
+                          border-width: 0px;
+                          border-style: solid;
+                          position: relative;
+                        "
+                      >
+                        <img
+                          class="c-lazy-image__img lrv-u-background-color-grey-lightest lrv-u-width-100p lrv-u-display-block lrv-u-height-auto"
+                          src="https://variety.com/wp-content/uploads/2023/04/Inside-The-Yellow-Cocoon-Shell-KEY-IMAGE-c-JK-Film-Potocol-res.jpg?w=1000&amp;h=563&amp;crop=1"
+                          alt="Inside the Yellow Cocoon Shell"
+                          srcset="
+                            https://variety.com/wp-content/uploads/2023/04/Inside-The-Yellow-Cocoon-Shell-KEY-IMAGE-c-JK-Film-Potocol-res.jpg?w=1000&amp;h=563&amp;crop=1                      1000w,
+                            https://variety.com/wp-content/uploads/2023/04/Inside-The-Yellow-Cocoon-Shell-KEY-IMAGE-c-JK-Film-Potocol-res.jpg?w=1000&amp;h=563&amp;crop=1&amp;resize=150%2C84   150w,
+                            https://variety.com/wp-content/uploads/2023/04/Inside-The-Yellow-Cocoon-Shell-KEY-IMAGE-c-JK-Film-Potocol-res.jpg?w=1000&amp;h=563&amp;crop=1&amp;resize=300%2C169  300w,
+                            https://variety.com/wp-content/uploads/2023/04/Inside-The-Yellow-Cocoon-Shell-KEY-IMAGE-c-JK-Film-Potocol-res.jpg?w=1000&amp;h=563&amp;crop=1&amp;resize=125%2C70   125w,
+                            https://variety.com/wp-content/uploads/2023/04/Inside-The-Yellow-Cocoon-Shell-KEY-IMAGE-c-JK-Film-Potocol-res.jpg?w=1000&amp;h=563&amp;crop=1&amp;resize=910%2C511  910w,
+                            https://variety.com/wp-content/uploads/2023/04/Inside-The-Yellow-Cocoon-Shell-KEY-IMAGE-c-JK-Film-Potocol-res.jpg?w=1000&amp;h=563&amp;crop=1&amp;resize=681%2C383  681w,
+                            https://variety.com/wp-content/uploads/2023/04/Inside-The-Yellow-Cocoon-Shell-KEY-IMAGE-c-JK-Film-Potocol-res.jpg?w=1000&amp;h=563&amp;crop=1&amp;resize=450%2C253  450w,
+                            https://variety.com/wp-content/uploads/2023/04/Inside-The-Yellow-Cocoon-Shell-KEY-IMAGE-c-JK-Film-Potocol-res.jpg?w=1000&amp;h=563&amp;crop=1&amp;resize=250%2C140  250w
+                          "
+                        />
+                      </div>
+                    </div>
+
+                    <p
+                      style="
+                        text-size-adjust: 100%;
+                        box-sizing: border-box;
+                        border: 0px;
+                        margin-bottom: 28px;
+                        line-height: 1.602rem;
+                        font-size: 1rem;
+                      "
+                    >
+                      <span style="font-size: 12pt"> JK Film and Potocol </span>
+                    </p>
+
+                    <p
+                      style="
+                        text-size-adjust: 100%;
+                        box-sizing: border-box;
+                        border: 0px;
+                        margin-bottom: 28px;
+                        line-height: 1.602rem;
+                        font-size: 1rem;
+                      "
+                    >
+                      <span style="font-size: 14pt">
+                        All of life, including death, is in the lengthy,
+                        unbroken shot that opens Thien An Pham‘s bewitching
+                        debut feature “Inside the Yellow Cocoon Shell.” We begin
+                        on the sidelines of a local soccer match in Saigon’s
+                        city center, observing the play from a cool distance
+                        before following a shuffling mascot, dressed in a wolf
+                        suit, to the adjoining bar. There, crowds watch a 2018
+                        World Cup fixture while a group of young men, turned
+                        from the TV, drink and discuss matters of faith,
+                        existence and ennui. Thien (Le Phong Vu) is quiet and
+                        morose, only half-invested in a conversation already
+                        beset with distractions: the sales pitch of a bubbly
+                        beer rep, the burst of a sudden summer thunderstorm, a
+                        metallic screech and grim thump as the camera again
+                        drifts serenely over to reveal the aftermath of a fatal
+                        motorcycle crash. In the ensuing rhubarb of bystander
+                        concern, Thien stays put.
+                      </span>
+                    </p>
+
+                    <p
+                      style="
+                        text-size-adjust: 100%;
+                        box-sizing: border-box;
+                        border: 0px;
+                        margin-bottom: 28px;
+                        line-height: 1.602rem;
+                        font-size: 1rem;
+                      "
+                    >
+                      <span style="font-size: 14pt">
+                        The absence of cuts in this immaculated choreographed
+                        long take feels not merely like technical show-offery,
+                        but a reflection of Thien’s own detached presence in a
+                        world passing him by. It’s only later, in the middle of
+                        an erotic massage at a gentlemen’s spa, that he learns
+                        the casualty of the crash was his sister-in-law Hanh;
+                        its survivor, his five-year-old nephew Dao (Nguyen
+                        Thinh). It’s an acidly comic way into tragedy, cuing a
+                        wandering spiritual inquiry that will take in many such
+                        dazzling shifts in tone and perspective along the way,
+                        all wrangled with preternatural confidence and formal
+                        invention by its young director.
+                      </span>
+                    </p>
+                    <p
+                      style="
+                        text-size-adjust: 100%;
+                        box-sizing: border-box;
+                        border: 0px;
+                        margin-bottom: 28px;
+                        line-height: 1.602rem;
+                        font-size: 1rem;
+                      "
+                    >
+                      <span style="font-size: 14pt">
+                        Fully delivering on the promise of Pham’s well-traveled
+                        shorts — one of which, 2019 Cannes Directors’ Fortnight
+                        winner “Stay Awake, Be Ready,” was the root for this
+                        feature — this is challenging but seductive art cinema
+                        that invites comparisons to such titans as Apichatpong
+                        Weerasethakul, Tsai Ming-liang and even Theo
+                        Angelopoulos, without feeling derivative of any. A
+                        standout in this year’s Fortnight program and among the
+                        most auspicious debuts to pop at Cannes of late, “Cocoon
+                        Shell” should attract attention from specialist
+                        distributors undaunted by the film’s esoteric edges and
+                        languorous but rewarding three-hour runtime.
+                      </span>
+                    </p>
+                    <p
+                      style="
+                        text-size-adjust: 100%;
+                        box-sizing: border-box;
+                        border: 0px;
+                        margin-bottom: 28px;
+                        line-height: 1.602rem;
+                        font-size: 1rem;
+                      "
+                    >
+                      <span style="font-size: 14pt">
+                        At the film’s heart is a warmly affecting story of loss
+                        and grief — for the dead, but also for alternate lives
+                        and opportunities missed — albeit one that reaches its
+                        emotional epiphanies in subtle, circuitous ways. In the
+                        absence of Hanh, the ill-equipped Thien becomes Dao’s
+                        temporary guardian; Tam, Dao’s dad and Thien’s brother,
+                        has been AWOL for years. Together, man and boy leave the
+                        city, accompanying Hanh’s corpse to their remote home
+                        village, where the rituals of burial and mourning in the
+                        local Christian community are observed in rapt, reverent
+                        detail.
+                      </span>
+                    </p>
+
+                    <p
+                      style="
+                        text-size-adjust: 100%;
+                        box-sizing: border-box;
+                        border: 0px;
+                        margin-bottom: 28px;
+                        line-height: 1.602rem;
+                        font-size: 1rem;
+                      "
+                    >
+                      <span style="font-size: 14pt">
+                        Thien, not a believer himself, has few words of
+                        assurance or consolation for his confused young nephew,
+                        though he’s not unreceptive to the comfort others find
+                        in faith, or the marvels of the living world. He adopts
+                        and nurtures an abandoned baby bird, before it, too,
+                        perishes and must be buried; he reunites with an old
+                        flame, now a nun at the convent school he wants Dao to
+                        attend, but they’re separated by differing ideas of the
+                        divine. Pham repeatedly thwarts convenient metaphors for
+                        redemption and renewal, as Thien must instead embark on
+                        a more complicated, irregular search through the
+                        wilderness — ostensibly for Tam, but essentially for his
+                        own soul, for an elusive sense of place and purpose.
+                      </span>
+                    </p>
+                    <p
+                      style="
+                        text-size-adjust: 100%;
+                        box-sizing: border-box;
+                        border: 0px;
+                        margin-bottom: 28px;
+                        line-height: 1.602rem;
+                        font-size: 1rem;
+                      "
+                    >
+                      <span style="font-size: 14pt">
+                        There is much obvious beauty in this lush, rural
+                        Vietnamese hinterland, as DP Dinh Duy Hung’s meticulous,
+                        intricately staggered compositions paint in the rich,
+                        wet greens of the surrounding forest, the mineral blues
+                        of weather-heavy skies and the interrupting gauze of
+                        mist over everything. But “Inside the Yellow Cocoon
+                        Shell” (the title of which, too, hints at ideas of
+                        natural and spiritual transition that the film resists
+                        making literal) is never dully picturesque: No landscape
+                        is shown here without a precise sense of how characters
+                        view and respond to it.
+                      </span>
+                    </p>
+
+                    <p
+                      style="
+                        text-size-adjust: 100%;
+                        box-sizing: border-box;
+                        border: 0px;
+                        margin-bottom: 28px;
+                        line-height: 1.602rem;
+                        font-size: 1rem;
+                      "
+                    >
+                      <span style="font-size: 14pt">
+                        Extraordinarily layered, fevered sound design,
+                        meanwhile, ensures that even the film’s most notionally
+                        quiet, pensive scenes feel bustlingly inhabited across
+                        the ecosystem. Much of the dialogue is woven through
+                        competing input from livestock, birdsong, wind, dripping
+                        water and radio chatter. These tangible sources ground
+                        us even as the film’s sense of time lapses and
+                        collapses, as past and present, waking and dreaming,
+                        earthly and ethereal states begin to slip casually into
+                        one another, and Thien’s quest circles futilely before
+                        arriving at a kind of grace anyway. “I cannot exist
+                        simultaneously in the light and in the dark,” Thien says
+                        at one point; in offering a splintered, elastic
+                        conception of spiritual identity, outside the rules of
+                        religious doctrine, Pham’s exquisite film suggests
+                        otherwise.
+                      </span>
+                    </p>
+                  </figure>
+                </div>
+
+                <!--// 내용 끝 -->
+
+                <!--출처(소스)-->
+
+                <div class="stradd_view_div">
+                  <b>Source</b>
+                  <a
+                    href="https://variety.com/2023/film/festivals/inside-the-yellow-cocoon-shell-review-1235607307/#recipient_hashed=0544ccb16309a93104ac73bb5550b4d929df96964a1a9508a9048ec04e03bbc9&amp;recipient_salt=bc048b49bf9ae"
+                    target="_blank"
+                    >https://variety.com/2023/film/festivals/inside-the-yellow-cocoon-shell-review-1235607307/#recipient_hashed=0544ccb16309a93104ac73bb5550b4d929df96964a1a9508a9048ec04e03bbc9&amp;recipient_salt=bc048b49bf9ae</a
+                  >
+                </div>
+
+                <!--//출처(소스)-->
+              </div>
+            </div>
+          </div>
+
+          <div class="admin_btn_group">
+            <div class="container-sm" style="margin-bottom: 10px"></div>
+          </div>
+
+          <section class="brd_view">
+            <div class="container-s">
+              <div class="brd_arrows">
+                <a href="/dist/selection_review.html" class="btn_page_list"
+                  ><div>목록</div></a
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+    <div class="container foot_div">
+        <div class="row footer-top">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <div class="ft_newsletter">
+                    <div class="ft_sns">
+                        <ul class="social_list list-inline">
+                            <li>
+                                <a class="link_facebook" href="" title="페이스북 바로가기" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 24 24">
+                                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link_twitter" href="" title="트위터 바로가기" target="_blank">
+                                    <svg width="30" height="34" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.3987 9.73893L21.78 0H19.7939L12.5164 8.45618L6.70399 0H0L8.78958 12.7872L0 23H1.9862L9.67135 14.07L15.8097 23H22.5137L13.3987 9.73893ZM10.6784 12.8999L9.78779 11.6266L2.70185 1.49463H5.75254L11.471 9.67143L12.3615 10.9448L19.7948 21.5733H16.7441L10.6784 12.8999Z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="" title="인스타그램 바로가기" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 24 24">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link_youtube" href="" title="유튜브 바로가기" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 24 24">
+                                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_btm">
+            <div class="col-12 col-md-9">
+                <address>
+                    <span class="add">
+                        <span>Busan Office</span>
+                        3rd Floor, BIFF HILL, Busan Cinema Center, 120, Suyeonggangbyeon-daero, Haeundae-gu, Busan 48058, Korea 
+                    </span>
+                    <span class="add">
+                        <span>Seoul Office</span>
+                        #1601, GARDEN TOWER, 84, Yulgok-ro, Jongno-gu, Seoul 03131, Korea 
+                    </span>
+                </address>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="copyright">
+                    <div class="en">© Busan International Film Festival  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  </body>
+</html>

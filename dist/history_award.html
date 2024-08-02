@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project Name</title>
+
+<!-- CSS -->
+<link
+  href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="../assets/css/reset.css" />
+<link rel="stylesheet" href="../assets/css/common.css" />
+<link rel="stylesheet" href="../assets/css/fonts.css" />
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/sub.css" />
+
+<link rel="stylesheet" href="../assets/css/media.css" />
+<link rel="stylesheet" href="../assets/css/media1.css" />
+<link rel="stylesheet" href="../assets/css/media2.css">
+<link rel="stylesheet" href="../assets/css/media3.css">
+
+<!-- AOS animation library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<!-- Jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<!-- AOS animation library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Common script -->
+<script src="../assets/js/common.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <header class="hd main fixed-top" id="hd">
+  <div class="container-xxl header_container">
+    <div class="header_top">
+      <div class="other_home">
+          <ul>
+              <li class="on">
+                  <a href="https://www.biff.kr/eng/">BIFF</a>
+              </li>
+              <li>
+                  <a href="https://www.acfm.kr/eng/" target="_blank">ACFM
+                      <span>
+                          <img src="/assets/imgs/common/other_home_acfm.png" alt="">
+                      </span>
+                  </a>
+                  <ul>
+                      <li>
+                          <a href="https://apm.biff.kr/eng/" target="_blank">APM</a>
+                      </li>
+                      <li>
+                          <a href="https://acf.biff.kr/eng/" target="_blank">ACF</a>
+                      </li>
+                      <li>
+                          <a href="https://www.globalottawards.org/eng/" target="_blank">ACA</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="https://bafa.biff.kr/eng/" target="_blank">BAFA</a>
+              </li>
+              <li>
+                  <a href="https://community.biff.kr/kor/" target="_blank">Community BIFF</a>
+              </li>
+              <li>
+                  <a href="https://forum.biff.kr/eng/" target="_blank">Forum BIFF</a>
+              </li>
+              <li>
+                  <a href="https://press.biff.kr/eng/" target="_blank">PRESS</a>
+              </li>
+              <li>
+                  <a href="" target="_blank">Archive</a>
+              </li>
+          </ul>
+      </div>
+      <div class="util">
+          <ul class="util_list">
+              <li>
+                  <a href="">KO</a>
+              </li>
+              <li>
+                  <a href="">
+                      <span>
+                          <img src="/assets/imgs/common/icon_search.png" alt="">
+                      </span>
+                      SEARCH
+                  </a>
+              </li>
+          </ul>
+      </div>
+    </div>
+    <div class="main_nav">
+        <div class="main_nav_left">
+            <h1 class="logo">
+                <a title="BIFF 홈" href="/dist/main.html">
+                    <img src="/assets/imgs/common/top_logo.svg" alt="부산국제영화제">
+                </a>
+            </h1>
+        </div>
+        <!-- main_nav_center -->
+         <div class="main_nav_center">
+            <div id="gnb" class="gnb">
+                <h2 class="screen_out">Main Menu</h2>
+                <nav>
+                    <ul class="list-inline depth1" id="gnbmenuids">
+                        <li class="active2">
+                            <a href="/dist/introduction.html">BIFF</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list1">
+                                    <li class="menu1_1">
+                                        <a href="/dist/introduction.html">Introduction</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_2">
+                                        <a href="/dist/view.html">Overview</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_3">
+                                        <a href="/dist/program_section.html">Program Sections</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_4">
+                                        <a href="/dist/awards.html">Awards</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_5">
+                                        <a href="/dist/programmers.html">Programmers</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_6">
+                                        <a href="/dist/team.html">The Team</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu1_7">
+                                        <a href="/dist/sponsorship.html">Sponsorship</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/submission_guide.html" target="_top">Submission</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list2">
+                                    <li class="menu2_1">
+                                        <a href="/dist/submission_guide.html" target="_top">Submission Guide</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_2">
+                                        <a href="/dist/official_selection.html" target="_top">Official Selection</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_3">
+                                        <a href="/dist/film_academy.html" target="_top">CHANEL X BIFF Asian Film Academy</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_4">
+                                        <a href="/dist/project_market.html" target="_top">Asian Project Market</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_5">
+                                        <a href="/dist/cinema_fund.html" target="_top">Asian Cinema Fund</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu2_6">
+                                        <a href="/dist/platform_busan.html" target="_top">Platform BUSAN</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/accreditation.html" target="_top">Accreditation</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list3">
+                                    <li class="menu3_1">
+                                        <a href="/dist/accreditation.html" target="_top">Accreditation</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_2">
+                                        <a href="/dist/festival.html" target="_top">Festival </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_3">
+                                        <a href="/dist/cinephile.html" target="_top">Cinephile </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_4">
+                                        <a href="/dist/press.html" target="_top">Press </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_5">
+                                        <a href="/dist/market.html" target="_top">Market </a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu3_6">
+                                        <a href="/dist/accreditation_faq.html" target="_top">FAQ</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/newsletter.html" target="_top">BIFF Story</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list4">
+                                    <li class="menu4_1">
+                                        <a href="/dist/newsletter.html" target="_top">Newsletter</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu4_2">
+                                        <a href="/dist/videos.html" target="_top">Videos</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu4_3">
+                                        <a href="/dist/selection_review.html" target="_top">Selection Review</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/archive.html" target="_top">Archive</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list5">
+                                    <li class="menu5_1">
+                                        <a href="/dist/archive.html" target="_top">Archive Search</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu5_2">
+                                        <a href="/dist/history.html" target="_top">History</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/dist/notice.html" target="_top">Community</a>
+                            <div class="nav_depth2_wrap">
+                                <span class="spanner"></span>
+                                <ul class="depth2 dep_list6">
+                                    <li class="menu6_1">
+                                        <a href="/dist/notice.html" target="_top">Notice</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu6_2">
+                                        <a href="/dist/sns_hub.html" target="_top">SNS Hub</a>
+                                        <a class="arrow">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+         </div>
+         <!-- main_nav_right -->
+         <div class="main_nav_right">
+            <h1 class="sponsor_logo">
+                <a href="" target="_blank">
+                    <img src="/assets/imgs/common/top_sponsor_logo_1.png" alt="부산은행">
+                </a>
+                <a href="" target="_blank">
+                    <img src="/assets/imgs/common/top_sponsor_logo_2.png" alt="제네시스">
+                </a>
+                <a href="" target="_blank">
+                    <img src="/assets/imgs/common/top_sponsor_logo_3.png" alt="샤넬">
+                </a>
+            </h1>
+         </div>
+    </div>
+  </div>
+  </header>
+    <div id="snb" class="snb">
+      <div class="container-xxl">
+        <ul class="list-inline snb_ul" id="snbul1">
+          <li class="">
+            <a href="/dist/archive.html" target="_top">Archive Search</a>
+          </li>
+          <li class="current">
+            <a href="/dist/videos.html" target="_top">History</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-xl">
+        <div class="sub_title_wrap">
+          <div class="container">
+            <h2 class="en">History</h2>
+          </div>
+        </div>
+        <div class="border_btm"></div>
+      </div>
+      <div class="page history">
+        <div>
+          <div class="archive_nav">
+            <div class="container">
+              <div class="common_cate_gp">
+                <div class="common_cates">
+                  <a class="common_cate" id="blah4">2023 </a>
+                  <div class="common_cate1_gp hidden">
+                    <a class="common_cate1" data-id="4">2023</a>
+                    <a class="common_cate1" data-id="4">2022</a>
+                    <a class="common_cate1" data-id="4">2021</a>
+                    <a class="common_cate1" data-id="4">2020</a>
+                    <a class="common_cate1" data-id="4">2019</a>
+                    <a class="common_cate1" data-id="4">2018</a>
+                    <a class="common_cate1" data-id="4">2017</a>
+                    <a class="common_cate1" data-id="4">2016</a>
+                    <a class="common_cate1" data-id="4">2015</a>
+                    <a class="common_cate1" data-id="4">2014</a>
+                    <a class="common_cate1" data-id="4">2013</a>
+                    <a class="common_cate1" data-id="4">2012</a>
+                    <a class="common_cate1" data-id="4">2011</a>
+                    <a class="common_cate1" data-id="4">2010</a>
+                    <a class="common_cate1" data-id="4">2009</a>
+                    <a class="common_cate1" data-id="4">2008</a>
+                    <a class="common_cate1" data-id="4">2007</a>
+                    <a class="common_cate1" data-id="4">2006</a>
+                    <a class="common_cate1" data-id="4">2005</a>
+                    <a class="common_cate1" data-id="4">2004</a>
+                    <a class="common_cate1" data-id="4">2003</a>
+                    <a class="common_cate1" data-id="4">2002</a>
+                    <a class="common_cate1" data-id="4">2001</a>
+                    <a class="common_cate1" data-id="4">2000</a>
+                    <a class="common_cate1" data-id="4">1999</a>
+                    <a class="common_cate1" data-id="4">1998</a>
+                    <a class="common_cate1" data-id="4">1997</a>
+                    <a class="common_cate1" data-id="4">1996</a>
+                  </div>
+                </div>
+              </div>
+              <div class="arc_tab">
+                <div class="mt20">
+                  <ul class="d3tab_basic">
+                    <li class="">
+                      <a href="/dist/history.html">Information</a>
+                    </li>
+                    <li class="on_1_1">
+                      <a href="/dist/showing.html">Showing</a>
+                    </li>
+                    <li class="on on_1_1">
+                      <a href="/dist/history_award.html">Award</a>
+                    </li>
+                    <li class="on_1_1">
+                      <a href="/dist/juries.html">Juries</a>
+                    </li>
+                    <li class="on_1_1">
+                      <a href="">Poster</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cont_archive container-xl">
+          <div class="cont">
+            <div class="arc_award">
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">
+                    The Asian Filmmaker of the Year
+                  </p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    This award is granted to the Asian filmmaker who has made
+                    the most significant contribution to the advancement of
+                    Asian film industry and culture throughout the year. This
+                    year’s awardee is Tony Leung, an actor who has starred in
+                    numerous prominent films such as
+                    <i>A City of Sadness</i> (1989),
+                    <i>Chungking Express</i> (1994),
+                    <i>Happy Together </i> (1997),
+                    <i>In the Mood for Love</i> (2000), and
+                    <i>Infernal Affairs</i> (2002), and actively leads Hong Kong
+                    films on the global stage.
+                  </p>
+                </div>
+                <div class="jury arc_jury">
+                  <div class="jury_li">
+                    <div class="jury_img">
+                      <img
+                        src="/assets/imgs/sub/history_award/1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="jury_txt">
+                      <p class="desc bold">
+                        Tony LEUNG<br />Actor | Hong Kong, China
+                      </p>
+                      <p class="desc mt15">
+                        Tony Leung Chiu Wai is an actor and singer from Hong
+                        Kong, who is internationally recognized as one of Asia’s
+                        most accomplished actors. Well-known for his roles in
+                        <i>Chungking Express</i> (1994),
+                        <i>Happy Together</i> (1997), and
+                        <i>In the Mood for Love</i> (2000), all directed by Wong
+                        Kar Wai, he has also appeared in three Golden Lion
+                        winners of the Venice International Film Festival:
+                        <i>A City of Sadness</i> (1989), <i>Cyclo</i> (1995),
+                        and <i>Lust, Caution</i> (2007). Furthermore, Leung
+                        built his filmography by starring in <i>Hero</i> (2002),
+                        which was a nominee for the Best Foreign Language Film
+                        at the Academy Awards 2003,
+                        <i>Infernal Affairs</i> (2002), and
+                        <i>Shang-Chi and the Legend of the Ten Rings</i> (2021).
+                        Since the beginning of his career in the 1980s, he has
+                        received numerous awards. Along with winning the Best
+                        Actor at Cannes Film Festival 2000, he is a five-time
+                        winner at the Hong Kong Film Awards and a three-time
+                        winner at the Golden Horse Film Awards; and he holds the
+                        record for the most awards in the Best Actor category.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">Korean Cinema Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    The Korean Cinema Award is presented to cineastes that have
+                    made a notable contribution in the globalization of Korean
+                    cinema.
+                  </p>
+                </div>
+                <div class="jury arc_jury">
+                  <div class="jury_li">
+                    <div class="jury_img">
+                      <img
+                        src="/assets/imgs/sub/history_award/2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="jury_txt">
+                      <p class="desc bold">
+                        Goran TOPALOVIC<br />Co-Founder of the New York Asian
+                        Film Festival | United States
+                      </p>
+                      <p class="desc mt15">
+                        For over 20 years, Goran Topalovic has been among the
+                        leading proponents of Korean Cinema in the US as a
+                        festival organizer, film curator, and writer. He’s the
+                        founding member and board director of Subway Cinema, a
+                        New York-based non-profit arts and culture organization,
+                        which was among the first in America to bring attention
+                        to Korean cinema. Goran is also the co-founder, former
+                        programmer, and executive director of the annual New
+                        York Asian Film Festival (NYAFF). During his 14 years at
+                        NYAFF, he was the driving force behind making Korean
+                        cinema into one of the pillars of the festival’s
+                        program, screening over 100 films. He was instrumental
+                        in organizing retrospectives on Korean actors such as
+                        Choi Min-sik and Lee Jungjae, and has led on-stage
+                        conversations with Park Chan-wook, Bong Joon Ho, and
+                        other leading filmmakers. Recently, Goran worked with
+                        Film at Lincoln Center on Relentless Invention: New
+                        Korean Cinema, 1996-2003 retrospective and curated a New
+                        Korean Cinema program on the Criterion Channel.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">New Currents Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    The New Currents Award is given to the two best feature
+                    films selected from the first or second feature of new Asian
+                    directors introduced in the New Currents section (a
+                    competitive section of BIFF for Asian films). A grand prize
+                    of 30,000 USD is awarded to each film. The jury consists of
+                    world-renowned film experts who will choose winners to
+                    discover and encourage the hidden jewels of Asian cinema.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61548"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/3.jpg"
+                        alt="괴인"
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">a Wild Roomer</p>
+                      <div class="info">
+                        <li>LEE Jeong-hong</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=60731"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/4.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Shivamma</p>
+                      <div class="info">
+                        <li>Jaishankar ARYAR</li>
+                        <li class="en">India</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">KIM Jiseok Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    The KIM Jiseok Award, newly established in 2017, is to
+                    remember and honor the late KIM Ji-seok who devoted his
+                    whole life to discovering and supporting the growth of Asian
+                    cinema. The award is given to the films in the competition
+                    category for the Korean and Asian directors who has directed
+                    more than 3 feature films, and two best films are selected
+                    and awarded a cash prize of USD 10,000 each sponsored by
+                    BIFF Supporters Associaton.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=58710"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/5.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Scent of Wind</p>
+                      <div class="info">
+                        <li>Hadi MOHAGHEGH</li>
+                        <li class="en">Iran</li>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61796"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/6.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Alteration</p>
+                      <div class="info">
+                        <li>Yalkin TUYCHIEV</li>
+                        <li class="en">Uzbekistan</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">BIFF Mecenat Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    The BIFF Mecenat Award is granted to the best documentary
+                    from Korea and Asia in Wide Angle competitive section.
+                    <br />The winner will be granted 10,000,000 KRW.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61655"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/7.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">A Table for Two</p>
+                      <div class="info">
+                        <li>KIM Boram</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61177"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/8.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">The Football Aficionado</p>
+                      <div class="info">
+                        <li>Sharmin MOJTAHEDZADEH, Paliz KHOSHDEL</li>
+                        <li class="en">Iran</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">
+                    BIFF Mecenat Award Special Mention
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61431"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/9.jpeg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">
+                        Dear Mother, I Meant to Write about Death
+                      </p>
+                      <div class="info">
+                        <li>CHEN Siyi</li>
+                        <li class="en">United States / China</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">Sonje Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    The Sonje Award is given to the best Korean and Asian short
+                    films in the Wide Angle section, providing 10,000,000 KRW to
+                    each director.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=58367"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/10.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Southern Afternoon</p>
+                      <div class="info">
+                        <li>LAN Tian</li>
+                        <li class="en">China</li>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=59898"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/11.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">I’m Here</p>
+                      <div class="info">
+                        <li>JEONG Eunuk</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">Sonje Award Special Mention</p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=59584"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/12.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Other Life</p>
+                      <div class="info">
+                        <li>ROH Dohyeon</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">Actors of the Year</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    Actors of the Year is the award to focus on first-time
+                    actors in the independent Korean films among the New
+                    Currents and Korean Cinema Today - Vision section. The
+                    top-class Korean actor and actress select one actor and one
+                    actress with outstanding performance. The winners will be
+                    awarded at the closing ceremony with a cash prize of KRW
+                    5,000,000 (approx. USD 4,300) each which is sponsored by
+                    BIFF Supporters Association.
+                  </p>
+                </div>
+                <div class="jury arc_jury">
+                  <div class="jury_li">
+                    <div class="jury_img">
+                      <img
+                        src="/assets/imgs/sub/history_award/actor_img01.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="jury_txt">
+                      <p class="desc bold">
+                        KIM Youngsung<br /><i class="not_bold">Big Sleep</i> | Korea
+                      </p>
+                      <p class="desc mt15">
+                        <b>Jury Comment</b>
+                        <br />
+                        It has been a wonderful time watching the splendid films
+                        at the 27th Busan International Film Festival,
+                        appropriate to the stature of the festival. Watching the
+                        impressive acting of the Actors of the Year candidates
+                        as a jury member, I was able to take the chance to
+                        ruminate my own acting, as well as become aware of the
+                        numerous hidden gems in our films, who have yet to be
+                        discovered. I send my congratulations to the awardee and
+                        hope that the Busan International Film Festival may
+                        shine brighter as a festival for us all.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="jury arc_jury">
+                  <div class="jury_li">
+                    <div class="jury_img">
+                      <img
+                        src="/assets/imgs/sub/history_award/actor_img02.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="jury_txt">
+                      <p class="desc bold">
+                        KIM Geumsoon<br /><i class="not_bold">Star of Ulsan</i> | Korea
+                      </p>
+                      <p class="desc mt15">
+                        <b>Jury Comment</b>
+                        <br />
+                        I wish to send a big round of applause to Kim Geumsoon,
+                        who displayed an Ulsan-sea-like acting, wide and deep,
+                        and also blame my ignorance for being unaware of such
+                        brilliant talent. She is an amazing actress, young and
+                        refreshing, who is worthy of wide recognition and high
+                        acclaim this year.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">The Choon-yun Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    The Choon-yun Award was established in honor of the late
+                    Chairman of the Korean Association of Film Art &amp;
+                    Industry, Lee Choon-yun. This award is given to one newly
+                    emerging producer with a cash prize of 10,000,000 KRW,
+                    sponsored by IOK Company. Producer Baek Jaeho, who
+                    participated in the production of <i>Snowball</i> (2021),
+                    was selected as the recipient of the first edition of the
+                    Choon-yun Award.
+                  </p>
+                </div>
+                <div class="jury arc_jury">
+                  <div class="jury_li">
+                    <div class="jury_img">
+                      <img
+                        src="/assets/imgs/sub/history_award/13.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="jury_txt">
+                      <p class="desc bold">BAEK Jaeho<br />Producer | Korea</p>
+                      <p class="desc mt15">
+                        Baek Jaeho started his career as a producer after
+                        participating in numerous films and drama series as
+                        minor, supporting roles. After participating in
+                        <i>Ordinary Days</i> (2012) as producer,
+                        cinematographer, and actor, he was the producer for
+                        <i>Santa Barbara</i> (2013) and <i>Jane</i> (2016). Baek
+                        made his directorial debut with
+                        <i>We Will Be Ok</i> (2014) and went on to create his
+                        second directorial production,
+                        <i>The Goose Goes South</i> (2018). In addition to
+                        <i>Snowball</i> (2021), producer Baek Jaeho showed his
+                        range by participating in various independent films such
+                        as <i>Jane</i> (2016)and <i>Moments of Role</i> (2021).
+                        Furthermore, his talents in various positions, from
+                        actor and director to full-time writer for IndieForum,
+                        received much attention.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">
+                    KB New Currents Audience Award
+                  </p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    This award is given to the film that is most highly rated by
+                    festival audiences from the New Currents section. Sponsored
+                    by KB Kookmin Bank, KRW 20,000,000 (approx. USD 18,000) is
+                    awarded to the director.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=60892"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/14.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">The Winter Within</p>
+                      <div class="info">
+                        <li>Aamir BASHIR</li>
+                        <li class="en">India / France / Qatar</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">
+                    Flash Forward Audience Award
+                  </p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    This award is given to the film that is most highly rated by
+                    festival audiences from the Flash Forward section. Sponsored
+                    by BIFF Supporters Association, 10,000,000 KRW is awarded to
+                    the director.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=60994"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/15.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Riceboy Sleeps</p>
+                      <div class="info">
+                        <li>Anthony SHIM</li>
+                        <li class="en">Canada</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">FIPRESCI Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    This award is given to well-made works that reflect its
+                    experimental and progressive spirit, among those presented
+                    in the New Currents section.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=58836"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/16.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Thousand and One Nights</p>
+                      <div class="info">
+                        <li>KUBOTA Nao</li>
+                        <li class="en">Japan</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">NETPAC Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    The NETPAC Award is given to the best film selected by the
+                    NETPAC jury among the films screened in the New Currents
+                    section. NETPAC is an international organization founded in
+                    1990 devoted to the expansion of Asian film distribution and
+                    screening.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61548"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/3.jpg"
+                        alt="괴인"
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">a Wild Roomer</p>
+                      <div class="info">
+                        <li>LEE Jeong-hong</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">DGK MEGABOX Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    The DGK MEGABOX Award goes to two Korean films from the
+                    Korean Cinema Today - Vision section. Each winner will be
+                    granted KRW 5,000,000 (approx.USD 3,700). This cash prize is
+                    sponsored by Directors Guild of Korea and Megabox.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61328"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/17.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Big Sleep</p>
+                      <div class="info">
+                        <li>KIM Taehoon</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61555"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/18.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Star of Ulsan</p>
+                      <div class="info">
+                        <li>JUNG Kihyuk</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">​CGV Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    This award was newly created in 2011 in collaboration with
+                    CJ CGV to shed new light on the Korean Cinema Today - Vision
+                    section. The winner will receive a cash prize of KRW
+                    10,000,000 (approx. USD 7,400) sponsored by CJ CGV.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61770"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/19.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Greenhouse</p>
+                      <div class="info">
+                        <li>LEE Sol-hui</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">KBS Independent Film Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    The KBS Independent Film Award is given to support Korean
+                    independent films. One Korean film will be selected among
+                    Korean Cinema Today - Vision and New Currents sections to
+                    receive KRW 10,000,000 (approx. USD 7,400). This cash prize
+                    is sponsored by KBS.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61548"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/3.jpg"
+                        alt="괴인"
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">a Wild Roomer</p>
+                      <div class="info">
+                        <li>LEE Jeong-hong</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">CGK Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    The CGK Award, sponsored by Cinematographers Guild of Korea,
+                    is given to one Korean film from either New Currents or
+                    Korean Cinema Today - Vision section. The winner’s
+                    cinematographer will be granted KRW 5,000,000 (approx. USD
+                    4,300).
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61771"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/20.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Hail to Hell</p>
+                      <div class="info">
+                        <li>JUNG Grim</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">Critic b Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    Critic b Award is given to one film chosen by Busan Film
+                    Critics Association among the selections in the New Currents
+                    and the Korean Cinema Today - Vision. The winner will
+                    receive KRW 10,000,000 (approx. USD 7,400).
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61548"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/3.jpg"
+                        alt="괴인"
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">a Wild Roomer</p>
+                      <div class="info">
+                        <li>LEE Jeong-hong</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">Watcha Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    This award is established to support new directors in Korean
+                    cinema. Two Korean films chosen from the New Currents and
+                    the Korean Cinema Today - Vision section will be given a
+                    cash prize of KRW 10,000,000 (approx. USD 7,400)
+                    respectively. This cash prize is sponsored by Watcha.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61093"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/21.jpeg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Peafowl</p>
+                      <div class="info">
+                        <li>BYUN Sung-bin</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61770"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/19.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Greenhouse</p>
+                      <div class="info">
+                        <li>LEE Sol-hui</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">Watcha Short Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    This award is established to support short film directors in
+                    Korean cinema. A short film chosen from Wide Angle-Korean
+                    Short Competition section will be given a cash prize of KRW
+                    5,000,000 (approx. USD 3,700). This cash prize is sponsored
+                    by Watcha.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=59584"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/12.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Other Life</p>
+                      <div class="info">
+                        <li>ROH Dohyeon</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">Aurora Media Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    This award is established to support new directors in Korean
+                    cinema. Two Korean films chosen from the New Currents and
+                    the Korean Cinema Today - Vision section will be given a
+                    cash prize of KRW 10,000,000 (approx. USD 7,400)
+                    respectively. This cash prize is sponsored by Aurora Media.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61770"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/19.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Greenhouse</p>
+                      <div class="info">
+                        <li>LEE Sol-hui</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61328"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/17.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Big Sleep</p>
+                      <div class="info">
+                        <li>KIM Taehoon</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">Citizen Critics' Award</p>
+                  <p class="desc mt10 wid80 m-wid100">
+                    Citizen critics from the Busan Cinematheque choose the best
+                    film from those screened in Korean Cinema Today - Vision
+                    section. The winner is awarded KRW 10,000,000 (approx. USD
+                    7,400) for supporting the director’s next production. This
+                    cash prize is sponsored by Johnnie Walker.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61533"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/22.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">Birth</p>
+                      <div class="info">
+                        <li>YOO Ji-young</li>
+                        <li class="en">Korea</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arc_award_li">
+                <div class="">
+                  <p class="tit-sec deco-circle">Busan Cinephile Award</p>
+
+                  <p class="desc mt10 wid80 m-wid100">
+                    This award is given to the best Korean and Asian documentary
+                    film presented in the Wide Angle documentary showcase
+                    section. The winner is awarded KRW 5,000,000 (approx. USD
+                    4,300). The jury of college students, including numerous
+                    students from the cinema-related departments of six
+                    universities in Busan region, select the winner. This cash
+                    prize is sponsored by CANADA GOOSE.
+                  </p>
+                </div>
+                <div class="award_film cl_b">
+                  <div class="award_film_li cl_b">
+                    <a
+                      class="thumb"
+                      href="/eng/html/archive/arc_history_view.asp?pyear=2022&amp;s1=&amp;page=&amp;m_idx=61500"
+                    >
+                      <img
+                        src="/assets/imgs/sub/history_award/23.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="txtbox">
+                      <p class="film_tit">While We Watched</p>
+                      <div class="info">
+                        <li>Vinay SHUKLA</li>
+                        <li class="en">United Kingdom</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- // 수상작 -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+    <div class="container foot_div">
+        <div class="row footer-top">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <div class="ft_newsletter">
+                    <div class="ft_sns">
+                        <ul class="social_list list-inline">
+                            <li>
+                                <a class="link_facebook" href="" title="페이스북 바로가기" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 24 24">
+                                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link_twitter" href="" title="트위터 바로가기" target="_blank">
+                                    <svg width="30" height="34" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.3987 9.73893L21.78 0H19.7939L12.5164 8.45618L6.70399 0H0L8.78958 12.7872L0 23H1.9862L9.67135 14.07L15.8097 23H22.5137L13.3987 9.73893ZM10.6784 12.8999L9.78779 11.6266L2.70185 1.49463H5.75254L11.471 9.67143L12.3615 10.9448L19.7948 21.5733H16.7441L10.6784 12.8999Z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="" title="인스타그램 바로가기" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 24 24">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link_youtube" href="" title="유튜브 바로가기" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 24 24">
+                                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_btm">
+            <div class="col-12 col-md-9">
+                <address>
+                    <span class="add">
+                        <span>Busan Office</span>
+                        3rd Floor, BIFF HILL, Busan Cinema Center, 120, Suyeonggangbyeon-daero, Haeundae-gu, Busan 48058, Korea 
+                    </span>
+                    <span class="add">
+                        <span>Seoul Office</span>
+                        #1601, GARDEN TOWER, 84, Yulgok-ro, Jongno-gu, Seoul 03131, Korea 
+                    </span>
+                </address>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="copyright">
+                    <div class="en">© Busan International Film Festival  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  </body>
+</html>
