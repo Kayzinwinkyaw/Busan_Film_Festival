@@ -58,6 +58,7 @@
 #visual .controlbox{
   position: absolute;
   bottom: 9.5%;
+  right: 8.5%;
   z-index: 999;
 }
 #visual .controlbox .ccbtn5 {
