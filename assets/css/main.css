@@ -1,7 +1,7 @@
 @charset "utf-8";
 #visual {
   width: 100vw;
-  height: 830px;
+  height: 1020px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -13,8 +13,8 @@
   width: 100%;
   margin: 0 !important;
 }
-.mainSwiper .imgBox {
-  height: 830px;
+.mainSwiper .imgBox{
+  height: 1020px;
 }
 .mainSwiper img {
   width: 100%;
@@ -42,7 +42,7 @@
   position: absolute;
   height: 100%;
   left: 15%;
-  bottom: 5%;
+  top: 7%;
   color: var(--bs-white);
 }
 .visual_txtbox2 .txt1 {
@@ -57,7 +57,7 @@
 }
 #visual .controlbox{
   position: absolute;
-  bottom: 11.5%;
+  bottom: 9.5%;
   left: 84%;
   z-index: 999;
 }
@@ -77,13 +77,13 @@
   display: block;
   width: 28px;
   height: 28px;
-  margin: 3px 8px;
+  margin: 6px 9px;
 }
 #visual .controlbox .ccbtn5 .nex {
   display: block;
   width: 28px;
   height: 28px;
-  margin: 3px 8px;
+  margin: 6px 9px;
 }
 #visual .visual_txtbox2 a.gobtn {
   border: solid 1px var(--bs-white);
@@ -160,7 +160,7 @@
 .main_news .news_li .bc_box .bc_tit a {
   display: -webkit-box;
   height: 5.5rem;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 1.6;
   color: #111;
   overflow: hidden;
@@ -175,7 +175,7 @@
   width: 100vw;
   position: relative;
   display: block;
-  margin-top: 75px;
+  margin-top: 150px;
 }
 .spotlight .main_sec_tit {
   color: #111;
@@ -198,16 +198,16 @@
   display: block;
   width: 28px;
   height: 28px;
-  margin: 3px 8px;
+  margin: 5px 8px;
 }
 .controlbox .ccbtn2 .nex {
   display: block;
   width: 28px;
   height: 28px;
-  margin: 3px 8px;
+  margin: 5px 8px;
 }
 .biff-story {
-  margin-top: 75px;
+  margin-top: 150px;
 }
 .biff-story .tit_wrap h3 {
   font-size: 3.6rem;
@@ -388,7 +388,7 @@
   width: 100vw;
   position: relative;
   display: block;
-  margin-top: 75px;
+  margin-top: 150px;
 }
 .mmedia .main_sec_tit {
   color: #111;

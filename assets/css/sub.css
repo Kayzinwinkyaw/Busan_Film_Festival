@@ -980,7 +980,9 @@
 .answer p {
   color: var(--bs-black) !important;
 }
-
+.underline {
+  text-decoration: underline !important;
+}
 /* film academy end */
 
 /* accreditation start */
