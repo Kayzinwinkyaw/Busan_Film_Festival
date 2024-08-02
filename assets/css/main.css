@@ -437,6 +437,7 @@
 .poster_cont {
   position: relative;
   display: block;
+  left: 8.5%;
 }
 .poster .main_sec_tit {
   display: inline-block;
@@ -544,7 +545,7 @@
 }
 .main_sns_cont {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .main_sns .biff_sns,
 .newsletter {
@@ -554,7 +555,7 @@
 }
 .main_sns .m_newsletter {
   float: left;
-  padding-right: 40px;
+  padding-right: 70px;
 }
 
 .main_sns .m_sns {
