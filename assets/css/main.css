@@ -58,7 +58,7 @@
 #visual .controlbox{
   position: absolute;
   bottom: 9.5%;
-  right: 8.5%;
+  right: 13%;
   z-index: 999;
 }
 #visual .controlbox .ccbtn5 {
@@ -437,7 +437,7 @@
 .poster_cont {
   position: relative;
   display: block;
-  left: 8.5%;
+  left: 12.5%;
 }
 .poster .main_sec_tit {
   display: inline-block;

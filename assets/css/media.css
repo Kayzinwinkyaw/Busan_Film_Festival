@@ -4,8 +4,10 @@
     File definitio: Responsive css on all pages
     Order: header > main > sub pages > footer
 -------------------------------------------------------------------*/
+@media screen and (max-width: 2160.98px){
+   
+}
 @media screen and (max-width: 1663.98px) {
-  
   
 }
 
