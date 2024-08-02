@@ -1,6 +1,20 @@
 $(document).ready(function () {
   AOS.init();
   $(".all_search_input").hide();
+  
+  var main_Swiper = new Swiper(".mainSwiper", {
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+   
+
+    navigation: {
+      nextEl: "#slider-next5",
+      prevEl: "#slider-prev5",
+    },
+  });
 
   const navLinks = document.querySelectorAll('.nav_link');
   const subNavLinks = document.querySelectorAll('.sub_navLinks a');
@@ -40,10 +54,6 @@ $(document).ready(function () {
     loop: true,
     autoplay: true,
     spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
     navigation: {
       nextEl: "#slider-next4",
       prevEl: "#slider-prev4",
@@ -55,10 +65,6 @@ $(document).ready(function () {
     initialSlide: 0,
     loop: true,
     spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
     navigation: {
       nextEl: "#slider-next3",
       prevEl: "#slider-prev3",
@@ -70,10 +76,6 @@ $(document).ready(function () {
     initialSlide: 0,
     loop: true,
     spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
     navigation: {
       nextEl: "#slider-next2",
       prevEl: "#slider-prev2",

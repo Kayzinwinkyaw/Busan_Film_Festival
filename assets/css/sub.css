@@ -1,12 +1,12 @@
 @charset "utf-8";
 
+
 /* introduction start */
 .snb {
   margin-top: 190px;
   background-color: #1d1d1d;
   text-align: left;
 }
-
 #snb .snb_ul {
   padding: 15px 0;
   text-align: center;
