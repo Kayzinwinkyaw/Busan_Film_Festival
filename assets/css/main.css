@@ -25,9 +25,12 @@
   padding-bottom: 0rem !important;
 }
 .mainSwiper .swiper-pagination {
-  margin-left: 700px;
-  margin-bottom: 95px;
+  left: 32%;
+  bottom: 10%;
   color: white !important;
+}
+.mainSwiper .swiper-pagination-total{
+  color: #ffffff50 !important;
 }
 #visual .visual-slider .visual .container-xl {
   margin-left: 16%;
@@ -525,18 +528,12 @@
   font-size: 18px;
   font-weight: 600;
   margin-left: 1rem;
-  padding-left: 1rem;
 }
-.poster .poster-swiper dl dd::before {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  left: 50%;
-  top: 80%;
-  margin-top: 27px;
-  width: 2px;
-  height: 14px;
-  background-color: #2a2a2a;
+.poster .poster-swiper span{
+  border-width: 2px 1px;
+  border-style: solid;
+  border-color: #2a2a2a;
+  margin-left: 1rem;
 }
 .main_sns {
   border-top: 1px solid #ddd;
@@ -549,19 +546,17 @@
 }
 .main_sns .biff_sns,
 .newsletter {
-  display: inline-block;
+  display: flex;
   margin-right: 2rem;
-  vertical-align: top;
+  align-items: center;
 }
 .main_sns .m_newsletter {
-  float: left;
   padding-right: 70px;
 }
 
 .main_sns .m_sns {
   display: inline-block;
   padding-right: 70px;
-  margin: 0 auto;
 }
 .main_sns .section_tit h3 {
   color: var(--bs-black);

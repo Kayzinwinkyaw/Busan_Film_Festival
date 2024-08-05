@@ -1,14 +1,13 @@
 $(document).ready(function () {
   AOS.init();
   $(".all_search_input").hide();
-  
+
   var main_Swiper = new Swiper(".mainSwiper", {
     loop: true,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
     },
-   
 
     navigation: {
       nextEl: "#slider-next5",
@@ -16,6 +15,21 @@ $(document).ready(function () {
     },
   });
 
+  $(".btn_menu").click(function () {
+    $(this).toggleClass("active");
+
+    if ($(window).width() < 1260) {
+      $(".menu_wrap").toggleClass("active");
+      console.log("toggle active");
+    } 
+  });
+  $(".mo_list.depth3").click(function () {
+    var $siblings = $(this).siblings();
+    $siblings.removeClass("open").find(".depth5").hide();
+    // 클릭한 depth1 요소의 하위 요소인 mo_snb를 토글합니다.
+    $(this).toggleClass("open").find(".depth5").toggle();
+  });
+  
   const menuItems = document.querySelectorAll("#gnbmenuids > li");
   const currentUrl = window.location.pathname;
 
@@ -57,6 +71,28 @@ $(document).ready(function () {
       nextEl: "#slider-next4",
       prevEl: "#slider-prev4",
     },
+    breakpoints: {
+      365:{
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      1300: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+      1660: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      }
+    },
   });
 
   const mmedia_swiper = new Swiper(".mmedia-swiper", {
@@ -68,6 +104,24 @@ $(document).ready(function () {
       nextEl: "#slider-next3",
       prevEl: "#slider-prev3",
     },
+    breakpoints: {
+      366:{
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      769: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1660: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      }
+    }
   });
 
   const poster_swiper = new Swiper(".poster-swiper", {
@@ -79,7 +133,26 @@ $(document).ready(function () {
       nextEl: "#slider-next2",
       prevEl: "#slider-prev2",
     },
+    breakpoints: {
+      367:{
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    },
   });
+
   $(".qna ul li").click(function () {
     $(this).toggleClass("on");
     $(this).find(".answer").slideToggle();
@@ -133,11 +206,9 @@ $(document).ready(function () {
   });
 });
 
+gsap.defaults({ overwrite: "auto" });
 
-
-gsap.defaults({overwrite: 'auto'});
-
-gsap.set(".left-content > *", {xPercent: -50, yPercent: -50});
+gsap.set(".left-content > *", { xPercent: -50, yPercent: -50 });
 
 // Set up our scroll trigger
 const ST = ScrollTrigger.create({
@@ -145,33 +216,40 @@ const ST = ScrollTrigger.create({
   start: "top top",
   end: "bottom bottom",
   onUpdate: getCurrentSection,
-  pin: ".left-content"
+  pin: ".left-content",
 });
 
 const contentMarkers = gsap.utils.toArray(".contentMarker");
 
 // Set up our content behaviors
-contentMarkers.forEach(marker => {
+contentMarkers.forEach((marker) => {
   marker.content = document.querySelector(`#${marker.dataset.markerContent}`);
-  
-  if(marker.content.tagName === "IMG") {
-    gsap.set(marker.content, {transformOrigin: "center"});
-    
-    marker.content.enter = function() {
-      gsap.fromTo(marker.content, {autoAlpha: 0, rotateY: -30}, {duration: 0.3, autoAlpha: 1, rotateY: 0});
-    }
-  } else if(marker.content.tagName === "BLOCKQUOTE") {
-    gsap.set(marker.content, {transformOrigin: "left center"});
-    
-    marker.content.enter = function() {
-      gsap.fromTo(marker.content, {autoAlpha: 0, rotateY: 50}, {duration: 0.3, autoAlpha: 1, rotateY: 0});
-    }
+
+  if (marker.content.tagName === "IMG") {
+    gsap.set(marker.content, { transformOrigin: "center" });
+
+    marker.content.enter = function () {
+      gsap.fromTo(
+        marker.content,
+        { autoAlpha: 0, rotateY: -30 },
+        { duration: 0.3, autoAlpha: 1, rotateY: 0 }
+      );
+    };
+  } else if (marker.content.tagName === "BLOCKQUOTE") {
+    gsap.set(marker.content, { transformOrigin: "left center" });
+
+    marker.content.enter = function () {
+      gsap.fromTo(
+        marker.content,
+        { autoAlpha: 0, rotateY: 50 },
+        { duration: 0.3, autoAlpha: 1, rotateY: 0 }
+      );
+    };
   }
-  
-  marker.content.leave = function() {
-    gsap.to(marker.content, {duration: 0.1, autoAlpha: 0});
-  }
-  
+
+  marker.content.leave = function () {
+    gsap.to(marker.content, { duration: 0.1, autoAlpha: 0 });
+  };
 });
 
 // Handle the updated position
@@ -179,29 +257,29 @@ let lastContent;
 function getCurrentSection() {
   let newContent;
   const currScroll = scrollY;
-  
+
   // Find the current section
-  contentMarkers.forEach(marker => {
-    if(currScroll > marker.offsetTop) {
+  contentMarkers.forEach((marker) => {
+    if (currScroll > marker.offsetTop) {
       newContent = marker.content;
     }
   });
-  
+
   // If the current section is different than that last, animate in
-  if(newContent
-  && (lastContent == null 
-     || !newContent.isSameNode(lastContent))) {
+  if (
+    newContent &&
+    (lastContent == null || !newContent.isSameNode(lastContent))
+  ) {
     // Fade out last section
-    if(lastContent) {
+    if (lastContent) {
       lastContent.leave();
     }
-    
+
     // Animate in new section
     newContent.enter();
-    
+
     lastContent = newContent;
   }
-  
 }
 
 const media = window.matchMedia("screen and (max-width: 600px)");
@@ -209,7 +287,7 @@ ScrollTrigger.addEventListener("refreshInit", checkSTState);
 checkSTState();
 
 function checkSTState() {
-  if(media.matches) {
+  if (media.matches) {
     ST.disable();
   } else {
     ST.enable();
