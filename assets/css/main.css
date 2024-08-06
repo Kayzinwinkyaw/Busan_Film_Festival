@@ -537,8 +537,8 @@
 }
 .main_sns {
   border-top: 1px solid #ddd;
-  padding-bottom: 135px;
-  padding-top: 135px;
+  padding-bottom: 135px !important;
+  padding-top: 135px !important;
 }
 .main_sns_cont {
   display: flex;
@@ -653,8 +653,12 @@
 .main_sponsor h3 {
   display: none;
 }
+.main_sponsor .sitebanner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .main_sponsor .sitebanner li {
-  display: inline-block;
   width: calc(23% - 1.8rem);
   text-align: center;
   vertical-align: middle;

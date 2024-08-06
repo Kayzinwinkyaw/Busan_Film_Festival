@@ -47,12 +47,6 @@ body {
   content: "";
   display: block;
 }
-.header_container {
-  max-width: 1750px;
-  margin: 0 auto;
-  width: 95%;
-  height: 100%;
-}
 .header_top {
   display: flex;
   justify-content: space-between;
@@ -516,7 +510,7 @@ body {
   display: flex;
   justify-content: flex-end;
   font-size: 20px;
-  padding: 0 0 50px 0;
+  padding: 50px 0;
   color: #777;
 }
 /* footer end */

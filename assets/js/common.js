@@ -138,7 +138,7 @@ $(document).ready(function () {
         slidesPerView: 1,
         spaceBetween: 20,
       },
-      640: {
+      575: {
         slidesPerView: 2,
         spaceBetween: 20,
       },
