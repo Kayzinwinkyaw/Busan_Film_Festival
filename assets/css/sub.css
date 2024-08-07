@@ -53,7 +53,6 @@
 .container-sm,
 .container-md {
   max-width: 1192px;
-  width: 100%;
   margin-bottom: 120px;
 }
 
@@ -71,7 +70,9 @@
 .desc {
   font-size: 17px;
 }
-
+.introduction .desc{
+  line-height: 30px;
+}
 .mt30 {
   margin-top: 30px;
 }
@@ -98,7 +99,7 @@
 
 .txt-center img {
   max-width: 100% !important;
-  width: 35% !important;
+  width: 478px !important;
 }
 
 .intro_list {
@@ -383,7 +384,9 @@
   padding-bottom: 15px;
   font-weight: 600;
 }
-
+.program_section .desc{
+  line-height: 30px;
+}
 /* program section end */
 
 /* award start */
@@ -403,6 +406,7 @@
   font-size: 18px;
   color: #555;
   gap: 0px;
+  line-height: 30px;
 }
 
 .award .award_li .tit-sec-name {
@@ -427,6 +431,9 @@
   line-height: 34px;
   line-height: 145%;
   font-weight: bold;
+  height: 50px;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 .programer {
@@ -441,7 +448,7 @@
 
 .programmer_cont {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 70px;
 }
 
@@ -476,7 +483,21 @@
 .img-responsive {
   width: 100%;
 }
-
+.programmer_cont_box{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.cont_box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+}
+.heading_hide{
+  display: none;
+}
+.heading_hide2{
+  display: none;
+}
 /* programmers end */
 
 /* contact start */
@@ -573,6 +594,9 @@
 
 .ml20 {
   margin-left: 20px;
+}
+.sponsorship .desc{
+  line-height: 30px;
 }
 
 /* sponsorship end */
@@ -1097,24 +1121,30 @@
   background: #f8f8f8;
   border: 1px solid #ddd;
   color: #333;
+  display: flex;
 }
 
 .list_info li strong {
-  display: inline-block;
-  width: 25%;
   font-size: 18px;
+  width: 25%;
 }
 
 .list_info li sub {
-  display: inline-block;
   font-size: 16px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .list_info li span {
-  float: right;
   font-size: 16px;
   text-align: right;
   font-weight: 600;
+}
+.list_info li .span_cont{
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
 }
 
 /* festival end */
@@ -1127,19 +1157,17 @@
   height: auto;
   padding: 20px 40px;
   text-align: center;
+  justify-content: space-between;
 }
 
 .list_info .flex_2 strong {
   width: auto;
 }
 
-.list_info li sub {
-  flex: 1 0 0;
-}
-
-.list_info li sub {
-  display: inline-block;
-  font-size: 16px;
+.cinephile .list_info li sub {
+  display: flex;
+  justify-content: center;
+  width: auto;
 }
 
 .list_info li strong em {

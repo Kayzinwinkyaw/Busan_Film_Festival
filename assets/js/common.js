@@ -72,7 +72,7 @@ $(document).ready(function () {
       prevEl: "#slider-prev4",
     },
     breakpoints: {
-      365:{
+      300:{
         slidesPerView: 1,
         spaceBetween: 40,
       },
@@ -105,7 +105,7 @@ $(document).ready(function () {
       prevEl: "#slider-prev3",
     },
     breakpoints: {
-      366:{
+      300:{
         slidesPerView: 1,
         spaceBetween: 20,
       },
@@ -128,14 +128,15 @@ $(document).ready(function () {
     slidesPerView: 7,
     initialSlide: 0,
     loop: true,
+    autoplay: true,
     spaceBetween: 30,
     navigation: {
       nextEl: "#slider-next2",
       prevEl: "#slider-prev2",
     },
     breakpoints: {
-      367:{
-        slidesPerView: 1,
+      300:{
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       575: {
@@ -150,6 +151,10 @@ $(document).ready(function () {
         slidesPerView: 5,
         spaceBetween: 50,
       },
+      1800: {
+        slidesPerView: 7,
+        spaceBetween: 30,
+      }
     },
   });
 
