@@ -1044,8 +1044,11 @@
   .history .common_cate_gp {
     border: 1px solid #d4d4d4;
     border-radius: 3px;
-    padding: 0px 10px;
     justify-content: space-between;
+  }
+  .history .common_cate1_gp{
+    width: 100% !important;
+    top: 58px;
   }
   .archive_nav .common_cates {
     width: 100%;
