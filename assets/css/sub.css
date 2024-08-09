@@ -70,7 +70,10 @@
 .desc {
   font-size: 17px;
 }
-.introduction .desc{
+.market .desc {
+  line-height: 30px;
+}
+.introduction .desc {
   line-height: 30px;
 }
 .mt30 {
@@ -384,7 +387,7 @@
   padding-bottom: 15px;
   font-weight: 600;
 }
-.program_section .desc{
+.program_section .desc {
   line-height: 30px;
 }
 /* program section end */
@@ -483,19 +486,19 @@
 .img-responsive {
   width: 100%;
 }
-.programmer_cont_box{
+.programmer_cont_box {
   display: grid;
   grid-template-columns: 1fr;
 }
-.cont_box{
+.cont_box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 70px;
 }
-.heading_hide{
+.heading_hide {
   display: none;
 }
-.heading_hide2{
+.heading_hide2 {
   display: none;
 }
 /* programmers end */
@@ -586,6 +589,7 @@
   font-size: 18px;
   font-weight: 600;
   color: #333;
+  line-height: 30px;
 }
 
 .ml20 b {
@@ -595,7 +599,7 @@
 .ml20 {
   margin-left: 20px;
 }
-.sponsorship .desc{
+.sponsorship .desc {
   line-height: 30px;
 }
 
@@ -876,7 +880,7 @@
   position: relative;
   margin-bottom: 10px;
   padding-left: 12px;
-  line-height: 1.6;
+  line-height: 30px;
 }
 
 .list_basic > li::before {
@@ -1085,6 +1089,9 @@
 .basic_2 > tbody > tr > td a:hover {
   background-color: #e95151;
 }
+.accreditation_faq .scroll_guide > span {
+  background-color: #f6f6f6 !important;
+}
 
 /* accreditation end */
 
@@ -1097,6 +1104,7 @@
 
 .list_basic > li > b {
   padding-bottom: 10px;
+  line-height: 30px;
 }
 
 .box_basic {
@@ -1106,10 +1114,12 @@
   border-radius: 10px;
   font-size: 17px;
   text-align: center;
+  line-height: 30px;
 }
 
 .list_basic > li .list_add li {
   margin-bottom: 10px;
+  line-height: 30px;
 }
 
 .list_info li {
@@ -1141,7 +1151,7 @@
   text-align: right;
   font-weight: 600;
 }
-.list_info li .span_cont{
+.list_info li .span_cont {
   display: flex;
   justify-content: flex-end;
   width: 25%;
@@ -1194,8 +1204,7 @@
 }
 
 .txt-center .original_img {
-  max-width: 100% !important;
-  width: 80% !important;
+  width: 873px !important;
 }
 
 .a_type1 {
@@ -1322,7 +1331,6 @@ a.cover {
 
 .brd_list .brd_li .tit_wrap .tit,
 .brd_list .brd_li .tit_wrap .tit span {
-  display: inline-block;
   white-space: nowrap;
   line-height: 1.3;
   overflow: hidden;
@@ -1355,7 +1363,6 @@ a.cover {
 .brd_list .brd_li .date {
   font-size: 18px;
   margin-top: 2px;
-  float: right;
 }
 
 .pagenation {
@@ -1734,9 +1741,8 @@ a.cover {
 /* newsletter end */
 
 /* videos start */
-.container-l{
+.container-l {
   max-width: 1280px;
-  width: 100%;
   margin-bottom: 120px;
 }
 .common_cate_gp {
@@ -1848,20 +1854,26 @@ a.cover {
   padding-top: 20px;
 }
 .media_wrap .media_ul {
-  margin-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  width: 100%;
+  height: 100%;
 }
 
 .media_ul .media_li {
   position: relative;
-  width: 370px;
 }
 
 .media_ul .media_row_cont {
   display: flex;
   flex-direction: column;
+  width: fit-content;
+}
+.media_ul .media_li .img_wrap {
+  width: fit-content;
+  height: fit-content;
 }
 .media_ul .media_li .img_wrap .thumb {
   width: 100%;
@@ -2147,6 +2159,28 @@ a.cover {
 .arc_pgl .pg_li .txtbox .film_info li:last-child::after {
   display: none;
 }
+#search_detail {
+  background: #f8f8f8;
+  padding: 40px 50px;
+}
+.arc_pgl .pg_li .txtbox .film_award_list li {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.5;
+  background: #f3edde;
+  color: #ba9b52;
+  padding: 4px 8px;
+  letter-spacing: -0.5px;
+  margin-right: 4px;
+  font-weight: 500;
+}
+.arc_pgl .pg_li .txtbox .bg_color li {
+  background-color: white !important;
+}
+.search_detail .search_detail_body span {
+  display: inline-block;
+  padding-right: 10px;
+}
 /* archive search end */
 
 /* history start */
@@ -2400,34 +2434,43 @@ a.cover {
   margin-top: 40px;
   margin-bottom: 90px;
 }
-
 .wz_list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  width: 100%;
+  height: 100%;
 }
-
-.wz_list .wz_li {
+.wz_list .wz_li_cont {
   position: relative;
+}
+.wz_list .wz_li {
   padding: 0 24px;
   padding-bottom: 80px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
 }
-
+.wz_list .wz_li .wz_thumb {
+  width: fit-content;
+  height: fit-content;
+}
 .wz_list .wz_li .wz_thumb .thumb {
-  background: #000;
+  background: var(--bs-black);
   width: 100%;
   height: 300px;
   overflow: hidden;
 }
 
-.wz_list .wz_li .wz_thumb .thumb img {
+.wz_list .wz_li .wz_thumb img {
   width: 100%;
+  height: 100%;
   min-height: 300px;
   opacity: 0.9;
   transform: scale(1.05);
   transition: 0.3s ease;
 }
-.wz_list .wz_li .wz_thumb .thumb img:hover {
+.wz_list .wz_li .wz_thumb img:hover {
   transform: scale(1);
 }
 .wz_list .wz_li .txtbox {
@@ -2435,15 +2478,17 @@ a.cover {
 }
 
 .wz_list .wz_li .txtbox .tit {
-  display: block;
+
   font-size: 24px;
   line-height: 1.1;
   color: #222;
   font-weight: 500;
   letter-spacing: -1.5px;
-  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; 
 }
 
 .wz_list .wz_li .txtbox .wz_desc {
@@ -2454,6 +2499,9 @@ a.cover {
   text-overflow: ellipsis;
   margin-top: 12px;
   width: 95%;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; 
 }
 
 .wz_list .wz_li .txtbox .info {
@@ -2547,15 +2595,14 @@ a.cover {
 /* sns_hub start */
 .sns_hub {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
 }
 
 .sns_hub .box {
   display: inline-block;
   max-height: 420px;
   padding: 30px;
-  margin-right: 50px;
-  margin-bottom: 50px;
   border: 1px solid #ddd;
   text-align: center;
   font-size: 16px;
@@ -2641,5 +2688,26 @@ a.cover {
   color: #888;
   letter-spacing: -0.5px;
 }
-
+.SNS_hub > .cont_b {
+  margin-bottom: 120px;
+}
 /* sns_hub end */
+
+/* for all page table */
+.scroll_guide_cont {
+  display: none;
+}
+.scroll_guide {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  color: #333;
+}
+.scroll_guide img {
+  width: 32px;
+  height: 32px;
+}
+.scroll_guide > span {
+  padding-left: 10px;
+  font-size: 15px;
+}
