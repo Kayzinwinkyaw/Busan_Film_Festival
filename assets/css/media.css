@@ -82,6 +82,16 @@
   .swiper-slide .txtbox .tits {
     font-size: 18px;
   }
+
+  /* history_award */
+  .cont_archive .arc_award .award_film .award_film_li {
+    width: 30%;
+    padding-right: 20px;
+}
+.cont_archive .arc_award .award_film .award_film_li .thumb img {
+  max-height: 300px;
+  height: 300px;
+}
 }
 @media screen and (max-width: 1470.98px) {
   #hd .gnb nav > .depth1 > li {
@@ -373,6 +383,16 @@
     width: 100%;
     height: 3px;
     background: var(--bs-white);
+  }
+
+  /* history_award */
+  .jury .jury_li{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .jury .jury_li .jury_txt{
+    padding-left: 0px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -742,6 +762,33 @@
   .wz_list .wz_li .wz_thumb{
     width: 100%;
   }
+
+
+  .cont_archive .arc_award .award_film .award_film_li {
+    width: 50%;
+}
+.cont_archive .arc_award .award_film .award_film_li .thumb img {
+  max-height: 200px;
+  height: 200px;
+}
+
+/* poster */
+.poster_box{
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.poster_box .col-md-3{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.poster_box .col-md-3 .poster_img {
+  width: 50%;
+  max-height: 900px;
+}
+.poster_box .col-md-8{
+  width: 100%;
+}
 }
 @media screen and (max-width: 650.98px) {
   #snb .snb_ul li a {
@@ -897,6 +944,16 @@
     width: 20px;
     height: 20px;
   }
+  .cont_archive .arc_award .award_film {
+   flex-wrap: wrap;
+}
+  .cont_archive .arc_award .award_film .award_film_li {
+    width: 100%;
+}
+.cont_archive .arc_award .award_film .award_film_li .thumb img {
+  max-height: 300px;
+  height: 300px;
+}
 }
 @media screen and (max-width: 483px) {
   #visual {
@@ -1074,6 +1131,10 @@
    .videos .common_cate_gp .mb_width2{
     display: block;
     width: 68% !important;
+  }
+
+  .showing .common_cate_gp{
+    border: 0;
   }
 }
 @media screen and (max-width: 400px) {
