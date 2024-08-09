@@ -684,7 +684,15 @@
 .tbl_basic > tbody > tr > td a:hover {
   background-color: #e95151;
 }
-
+.project_market .desc{
+  line-height: 30px;
+}
+.cinema_fund .desc{
+  line-height: 30px;
+}
+.platform_busan .desc{
+  line-height: 30px;
+}
 /* submission guide end */
 
 /* official selection start */
@@ -833,7 +841,9 @@
   --bs-gutter-x: 2rem;
   --bs-gutter-y: 0;
 }
-
+.official_selection .desc{
+  line-height: 30px;
+}
 /* official selection end */
 
 /* film academy start */
@@ -1009,6 +1019,9 @@
 }
 .underline {
   text-decoration: underline !important;
+}
+.film_acedemy .desc{
+  line-height: 30px;
 }
 /* film academy end */
 
@@ -2276,6 +2289,7 @@ a.cover {
   color: #888;
   line-height: 1.5;
   letter-spacing: -0.5px;
+  width: 100%;
 }
 .showing .common_cate_gp .common_cate::after {
   background: url(/assets/imgs/sub/showing/ico_dropdown_filter.png);
@@ -2287,6 +2301,8 @@ a.cover {
   top: 40px;
   width: 350px;
   max-height: 320px;
+  right: -1px;
+  left: auto;
 }
 .cont_archive .arc_award .arc_award_li {
   padding: 30px 0;
@@ -2429,6 +2445,12 @@ a.cover {
 }
 .poster_box .col-md-8 {
   width: 80%;
+}
+.jury .desc{
+  line-height: 30px;
+}
+.arc_award_li .desc{
+  line-height: 30px;
 }
 /* history end */
 
